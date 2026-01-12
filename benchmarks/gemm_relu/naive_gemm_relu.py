@@ -22,12 +22,22 @@ def kernel_gemm_relu(
     relu_stage(C, Y)
     return Y
 
-# i, j, k order kept for gemm
+# # i, j, k order kept for gemm
+# s_gemm = allo.customize(gemm_stage)
+# s_gemm.pipeline("k")
+# s_relu = allo.customize(relu_stage)
+# s_relu.pipeline("j")
+
+# schedule = allo.customize(kernel_gemm_relu)
+# schedule.compose(s_gemm)
+# schedule.compose(s_relu)
+
+# k, i, j order for gemm
 s_gemm = allo.customize(gemm_stage)
+s_gemm.reorder("j", "i", "k")
 s_gemm.pipeline("k")
 s_relu = allo.customize(relu_stage)
 s_relu.pipeline("j")
-
 schedule = allo.customize(kernel_gemm_relu)
 schedule.compose(s_gemm)
 schedule.compose(s_relu)
@@ -40,18 +50,18 @@ schedule.compose(s_relu)
 # s_relu = allo.customize(relu_stage)
 # s_relu.pipeline("j")
 
-# schedule = allo.customize(kernel_gemm_relu)
-# schedule.compose(s_gemm)
-# schedule.compose(s_relu)
-# print(schedule.module)
-# sim_mod = schedule.build()
-# A_np = np.random.rand(64, 64).astype(np.float32)
-# B_np = np.random.rand(64, 64).astype(np.float32)
-# output_ref = np.maximum(np.dot(A_np, B_np), 0)
-# output = sim_mod(A_np, B_np)
-# np.testing.assert_allclose(output_ref, output, rtol=1e-5)
-# print("GEMM + ReLU computation is correct!")
+schedule = allo.customize(kernel_gemm_relu)
+schedule.compose(s_gemm)
+schedule.compose(s_relu)
+print(schedule.module)
+sim_mod = schedule.build()
+A_np = np.random.rand(64, 64).astype(np.float32)
+B_np = np.random.rand(64, 64).astype(np.float32)
+output_ref = np.maximum(np.dot(A_np, B_np), 0)
+output = sim_mod(A_np, B_np)
+np.testing.assert_allclose(output_ref, output, rtol=1e-5)
+print("GEMM + ReLU computation is correct!")
 
 if hls.is_available("vitis_hls"):
-    hls_mod = schedule.build(target="vitis_hls", mode = "csim", project="ijk_pipelined_gemm_relu.prj")
+    hls_mod = schedule.build(target="vitis_hls", mode = "csim", project="jik_pipelined_gemm_relu.prj")
 print("HLS C project generated.")

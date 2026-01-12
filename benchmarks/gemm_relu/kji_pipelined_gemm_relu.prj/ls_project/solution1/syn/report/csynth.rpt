@@ -1,0 +1,107 @@
+
+
+================================================================
+== Synthesis Summary Report of 'kernel_gemm_relu'
+================================================================
++ General Information: 
+    * Date:           Mon Jan 12 14:42:02 2026
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+    * Project:        ls_project
+    * Solution:       solution1 (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+---------+---------+------------+------------+-----+
+    |                                         Modules                                        |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |         |         |            |            |     |
+    |                                         & Loops                                        |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
+    +----------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+---------+---------+------------+------------+-----+
+    |+ kernel_gemm_relu                                                                      |  Timing|  -0.00|   278765|  2.788e+06|         -|   278766|       -|        no|  90 (2%)|  5 (~0%)|  5854 (~0%)|  7384 (~0%)|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_132     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|        -|        -|  1044 (~0%)|   689 (~0%)|    -|
+    |  o l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1                                         |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|        -|        -|           -|           -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_106_1_VITIS_LOOP_107_2_fu_140               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|        -|        -|    29 (~0%)|   167 (~0%)|    -|
+    |  o VITIS_LOOP_106_1_VITIS_LOOP_107_2                                                   |       -|   7.30|     4096|  4.096e+04|         1|        1|    4096|       yes|        -|        -|           -|           -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_145     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|        -|        -|  1044 (~0%)|   689 (~0%)|    -|
+    |  o l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1                                         |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|        -|        -|           -|           -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_k_l_j_l_i_fu_153                           |       -|   0.00|   262151|  2.622e+06|         -|   262151|       -|        no|        -|  5 (~0%)|   557 (~0%)|   686 (~0%)|    -|
+    |  o l_S_i_j_k_0_k_l_j_l_i                                                               |       -|   7.30|   262149|  2.621e+06|         7|        1|  262144|       yes|        -|        -|           -|           -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_160                               |       -|   3.77|     4099|  4.099e+04|         -|     4099|       -|        no|        -|        -|    88 (~0%)|   241 (~0%)|    -|
+    |  o l_S_i_j_0_i1_l_j1                                                                   |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|        -|        -|           -|           -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_166  |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|        -|        -|  1028 (~0%)|  1155 (~0%)|    -|
+    |  o l_S_store_res2_store_res2_l_0_l_store_res2_l_1                                      |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|        -|        -|           -|           -|    -|
+    +----------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+---------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| v33      | inout     | float*   |
+| v34      | inout     | float*   |
+| v35      | inout     | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+---------------------+-----------+----------+-----------------------+
+| Argument | HW Name             | HW Type   | HW Usage | HW Info               |
++----------+---------------------+-----------+----------+-----------------------+
+| v33      | m_axi_gmem          | interface |          |                       |
+| v33      | s_axi_control v33_1 | register  | offset   | offset=0x10, range=32 |
+| v33      | s_axi_control v33_2 | register  | offset   | offset=0x14, range=32 |
+| v34      | m_axi_gmem          | interface |          |                       |
+| v34      | s_axi_control v34_1 | register  | offset   | offset=0x1c, range=32 |
+| v34      | s_axi_control v34_2 | register  | offset   | offset=0x20, range=32 |
+| v35      | m_axi_gmem          | interface |          |                       |
+| v35      | s_axi_control v35_1 | register  | offset   | offset=0x28, range=32 |
+| v35      | s_axi_control v35_2 | register  | offset   | offset=0x2c, range=32 |
++----------+---------------------+-----------+----------+-----------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+* Burst Summary
++--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| HW Interface | Message                                                                                                                                                                                                                    | Location         |
++--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+| m_axi_gmem   | Multiple burst reads of length 256 and bit width 512. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.  | kernel.cpp:58:32 |
+| m_axi_gmem   | Multiple burst reads of length 256 and bit width 512. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.  | kernel.cpp:71:32 |
+| m_axi_gmem   | Multiple burst writes of length 256 and bit width 512. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | kernel.cpp:84:34 |
++--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
