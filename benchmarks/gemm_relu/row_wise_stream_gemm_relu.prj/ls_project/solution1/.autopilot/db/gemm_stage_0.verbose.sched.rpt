@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vitis HLS Report for 'gemm_stage_0'
+================================================================
+* Date:           Sat Jan 10 19:38:05 2026
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        ls_project
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.624 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   271169|   271169|  2.712 ms|  2.712 ms|  271169|  271169|       no|
+    +---------+---------+----------+----------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_S_i_0_i  |   271168|   271168|      4237|          -|          -|    64|        no|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.46>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 9 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%c_row = alloca i64 1" [kernel.cpp:26]   --->   Operation 10 'alloca' 'c_row' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.46ns)   --->   "%store_ln25 = store i7 0, i7 %i" [kernel.cpp:25]   --->   Operation 11 'store' 'store_ln25' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln25 = br void" [kernel.cpp:25]   --->   Operation 12 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.31>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%i_1 = load i7 %i" [kernel.cpp:31]   --->   Operation 13 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.71ns)   --->   "%icmp_ln25 = icmp_eq  i7 %i_1, i7 64" [kernel.cpp:25]   --->   Operation 14 'icmp' 'icmp_ln25' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 15 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.85ns)   --->   "%add_ln25 = add i7 %i_1, i7 1" [kernel.cpp:25]   --->   Operation 16 'add' 'add_ln25' <Predicate = true> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln25 = br i1 %icmp_ln25, void %.split8, void" [kernel.cpp:25]   --->   Operation 17 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln31 = trunc i7 %i_1" [kernel.cpp:31]   --->   Operation 18 'trunc' 'trunc_ln31' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @gemm_stage_0_Pipeline_VITIS_LOOP_27_1, i32 %c_row"   --->   Operation 19 'call' 'call_ln0' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 20 [1/1] (0.46ns)   --->   "%store_ln25 = store i7 %add_ln25, i7 %i" [kernel.cpp:25]   --->   Operation 20 'store' 'store_ln25' <Predicate = (!icmp_ln25)> <Delay = 0.46>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln51 = ret" [kernel.cpp:51]   --->   Operation 21 'ret' 'ret_ln51' <Predicate = (icmp_ln25)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln0 = call void @gemm_stage_0_Pipeline_VITIS_LOOP_27_1, i32 %c_row"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 2.29>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i6.i6, i6 %trunc_ln31, i6 0" [kernel.cpp:26]   --->   Operation 23 'bitconcatenate' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [2/2] (2.29ns)   --->   "%call_ln26 = call void @gemm_stage_0_Pipeline_l_S_k_0_k, i32 %c_row, i12 %tmp_cast, i32 %v0, i32 %v1" [kernel.cpp:26]   --->   Operation 24 'call' 'call_ln26' <Predicate = true> <Delay = 2.29> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 25 [1/2] (0.00ns)   --->   "%call_ln26 = call void @gemm_stage_0_Pipeline_l_S_k_0_k, i32 %c_row, i12 %tmp_cast, i32 %v0, i32 %v1" [kernel.cpp:26]   --->   Operation 25 'call' 'call_ln26' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%writereq_ln118 = writereq void @_ssdm_op_WriteReq, i32 %v2_0_0_0, i32 2" [/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_streamofblocks.h:118]   --->   Operation 26 'writereq' 'writereq_ln118' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln0 = call void @gemm_stage_0_Pipeline_VITIS_LOOP_46_2, i32 %c_row, i32 %v2_0_0_0"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln0 = call void @gemm_stage_0_Pipeline_VITIS_LOOP_46_2, i32 %c_row, i32 %v2_0_0_0"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln26 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [kernel.cpp:26]   --->   Operation 29 'specloopname' 'specloopname_ln26' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %v2_0_0_0, void @p_str, i32 0, i32 0, void @p_str_1, i32 0, i32 0, void @p_str_1, void @p_str_1, void @p_str_1, i32 2, i32 2, i32 16, i32 16, void @p_str_1, void @p_str_1"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%write_ln134 = write void @_ssdm_op_Write, i32 %v2_0_0_0, i32 2" [/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_streamofblocks.h:134]   --->   Operation 31 'write' 'write_ln134' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 32 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.46ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'store' operation ('store_ln25', kernel.cpp:25) of constant 0 on local variable 'i' [6]  (0.46 ns)
+
+ <State 2>: 1.32ns
+The critical path consists of the following:
+	'load' operation ('i', kernel.cpp:31) on local variable 'i' [9]  (0 ns)
+	'add' operation ('add_ln25', kernel.cpp:25) [12]  (0.856 ns)
+	'store' operation ('store_ln25', kernel.cpp:25) of variable 'add_ln25', kernel.cpp:25 on local variable 'i' [24]  (0.46 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 2.29ns
+The critical path consists of the following:
+	'call' operation ('call_ln26', kernel.cpp:26) to 'gemm_stage_0_Pipeline_l_S_k_0_k' [19]  (2.29 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

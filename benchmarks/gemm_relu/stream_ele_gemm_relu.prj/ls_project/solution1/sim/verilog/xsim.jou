@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jan  9 20:59:29 2026
+# Process ID: 2916991
+# Current directory: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/stream_ele_gemm_relu.prj/ls_project/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/top/xsim_script.tcl}
+# Log file: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/stream_ele_gemm_relu.prj/ls_project/solution1/sim/verilog/xsim.log
+# Journal file: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/stream_ele_gemm_relu.prj/ls_project/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/top/xsim_script.tcl
+source top.tcl

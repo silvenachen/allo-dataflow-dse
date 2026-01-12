@@ -1,0 +1,74 @@
+{
+    "name": "gemm_relu_row_wise",
+    "description": [
+        "Allo generated kernels"
+    ],
+    "flow": "vitis",
+    "keywords": [],
+    "key_concepts": [],
+    "platform_blocklist": [
+        "nodma"
+    ],
+    "os": [
+        "Linux"
+    ],
+    "runtime": [
+        "OpenCL"
+    ],
+    "host": {
+        "host_exe": "gemm_relu_row_wise",
+        "compiler": {
+            "sources": [
+                "xcl2.cpp",
+                "host.cpp"
+            ],
+            "includepaths": [
+                "."
+            ]
+        }
+    },
+    "containers": [
+        {
+            "accelerators": [
+                {
+                    "name": "gemm_relu_row_wise",
+                    "location": "kernel.cpp"
+                }
+            ],
+            "name": "gemm_relu_row_wise",
+            "ldclflags": "--optimize 3  --kernel_frequency 300"
+        }
+    ],
+    "launch": [
+        {
+            "cmd_args": "BUILD/gemm_relu_row_wise.xclbin",
+            "name": "generic launch for all flows"
+        }
+    ],
+    "contributors": [
+        {
+            "url": "https://github.com/cornell-zhang/allo",
+            "group": "Allo"
+        }
+    ],
+    "testinfo": {
+        "disable": false,
+        "profile": "no",
+        "jobs": [
+            {
+                "index": 0,
+                "dependency": [],
+                "env": "",
+                "cmd": "",
+                "max_memory_MB": 32768,
+                "max_time_min": 300
+            }
+        ],
+        "targets": [
+            "vitis_sw_emu",
+            "vitis_hw_emu",
+            "vitis_hw"
+        ],
+        "category": "canary"
+    }
+}

@@ -1,0 +1,26 @@
+[     0-274601] kernel_gemm_relu
+[    72-  4173]   kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
+[    72-  4173]   kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
+[    72-  4168]   kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2
+[  4175-266325]   kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j
+[266327-270424]   kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1
+[270426-274523]   kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
+
++----------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+------------+-------------+-----+
+    |                                         Modules                                        |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |          |         |            |             |     |
+    |                                         & Loops                                        |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|   BRAM   |   DSP   |     FF     |     LUT     | URAM|
+    +----------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+------------+-------------+-----+
+    |+ kernel_gemm_relu                                                                      |  Timing|  -0.00|   274594|  2.746e+06|         -|   274595|       -|        no|  206 (5%)|  5 (~0%)|  8612 (~0%)|  10247 (~0%)|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_142     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|  1044 (~0%)|    689 (~0%)|    -|
+    |  o l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1                                         |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_150     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|  1044 (~0%)|    689 (~0%)|    -|
+    |  o l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1                                         |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|         -|        -|    29 (~0%)|    167 (~0%)|    -|
+    |  o VITIS_LOOP_107_1_VITIS_LOOP_108_2                                                   |       -|   7.30|     4096|  4.096e+04|         1|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163                           |       -|   0.00|   262151|  2.622e+06|         -|   262151|       -|        no|         -|  5 (~0%)|   557 (~0%)|    698 (~0%)|    -|
+    |  o l_S_i_j_k_0_i_l_k_l_j                                                               |       -|   7.30|   262149|  2.621e+06|         7|        1|  262144|       yes|         -|        -|           -|            -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170                               |       -|   3.77|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|    88 (~0%)|    241 (~0%)|    -|
+    |  o l_S_i_j_0_i1_l_j1                                                                   |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_176  |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|  1028 (~0%)|   1155 (~0%)|    -|
+    |  o l_S_store_res2_store_res2_l_0_l_store_res2_l_1                                      |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    +----------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+------------+-------------+-----+
