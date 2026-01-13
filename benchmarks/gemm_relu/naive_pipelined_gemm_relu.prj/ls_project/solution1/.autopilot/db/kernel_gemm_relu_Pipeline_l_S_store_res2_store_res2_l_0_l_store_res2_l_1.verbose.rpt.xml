@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1'" level="0">
-<item name = "Date">Fri Jan  9 17:50:35 2026
+<item name = "Date">Tue Jan 13 11:00:57 2026
 </item>
 <item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
 <item name = "Project">ls_project</item>
@@ -100,11 +100,11 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_indvar_flatten58_load">9, 2, 13, 26</column>
+<column name="ap_sig_allocacmp_indvar_flatten167_load">9, 2, 13, 26</column>
 <column name="ap_sig_allocacmp_store_res2_l_0_load">9, 2, 7, 14</column>
 <column name="ap_sig_allocacmp_store_res2_l_1_load">9, 2, 7, 14</column>
 <column name="gmem2_blk_n_W">9, 2, 1, 2</column>
-<column name="indvar_flatten58_fu_88">9, 2, 13, 26</column>
+<column name="indvar_flatten167_fu_88">9, 2, 13, 26</column>
 <column name="phi_ln89_fu_76">9, 2, 480, 960</column>
 <column name="store_res2_l_0_fu_84">9, 2, 7, 14</column>
 <column name="store_res2_l_1_fu_80">9, 2, 7, 14</column>
@@ -121,7 +121,7 @@
 <column name="icmp_ln86_reg_344">1, 0, 1, 0</column>
 <column name="icmp_ln89_reg_354">1, 0, 1, 0</column>
 <column name="icmp_ln89_reg_354_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="indvar_flatten58_fu_88">13, 0, 13, 0</column>
+<column name="indvar_flatten167_fu_88">13, 0, 13, 0</column>
 <column name="or_ln_reg_364">512, 0, 512, 0</column>
 <column name="phi_ln89_fu_76">480, 0, 480, 0</column>
 <column name="store_res2_l_0_fu_84">7, 0, 7, 0</column>

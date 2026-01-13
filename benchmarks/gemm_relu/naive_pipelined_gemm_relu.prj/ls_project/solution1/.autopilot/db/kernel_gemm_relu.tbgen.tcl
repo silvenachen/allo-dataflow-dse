@@ -349,7 +349,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "274594", "EstimateLatencyMax" : "274594",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "299165", "EstimateLatencyMax" : "299165",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -444,13 +444,13 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_107_1_VITIS_LOOP_108_2", "PipelineType" : "NotSupport"}]},
 	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158.flow_control_loop_pipe_sequential_init_U", "Parent" : "9"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163", "Parent" : "0", "Child" : ["12", "13", "14"],
-		"CDFG" : "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j",
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163", "Parent" : "0", "Child" : ["12", "13", "14"],
+		"CDFG" : "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "262151", "EstimateLatencyMax" : "262151",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "286722", "EstimateLatencyMax" : "286722",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -458,15 +458,14 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
+			{"Name" : "C", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "buf0", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "buf1", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "C", "Type" : "Memory", "Direction" : "IO"}],
+			{"Name" : "buf1", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "l_S_i_j_k_0_i_l_k_l_j", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter1", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter7", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter7", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163.fadd_32ns_32ns_32_3_full_dsp_1_U8", "Parent" : "11"},
-	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163.fmul_32ns_32ns_32_2_max_dsp_1_U9", "Parent" : "11"},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163.flow_control_loop_pipe_sequential_init_U", "Parent" : "11"},
+			{"Name" : "l_S_i_j_k_0_i_l_k", "PipelineType" : "NotSupport"}]},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163.fadd_32ns_32ns_32_3_full_dsp_1_U8", "Parent" : "11"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163.fmul_32ns_32ns_32_2_max_dsp_1_U9", "Parent" : "11"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163.flow_control_loop_pipe_sequential_init_U", "Parent" : "11"},
 	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170", "Parent" : "0", "Child" : ["16", "17"],
 		"CDFG" : "kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1",
 		"Protocol" : "ap_ctrl_hs",
@@ -535,10 +534,10 @@ set ArgLastReadFirstWriteLatency {
 		buf1 {Type O LastRead -1 FirstWrite 2}}
 	kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 {
 		C {Type O LastRead -1 FirstWrite 0}}
-	kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j {
-		buf0 {Type I LastRead 1 FirstWrite -1}
-		buf1 {Type I LastRead 1 FirstWrite -1}
-		C {Type IO LastRead 2 FirstWrite 7}}
+	kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k {
+		C {Type IO LastRead 32 FirstWrite 32}
+		buf0 {Type I LastRead 0 FirstWrite -1}
+		buf1 {Type I LastRead 63 FirstWrite -1}}
 	kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 {
 		C {Type I LastRead 0 FirstWrite -1}
 		Y {Type O LastRead -1 FirstWrite 2}}
@@ -550,8 +549,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "274594", "Max" : "274594"}
-	, {"Name" : "Interval", "Min" : "274595", "Max" : "274595"}
+	{"Name" : "Latency", "Min" : "299165", "Max" : "299165"}
+	, {"Name" : "Interval", "Min" : "299166", "Max" : "299166"}
 ]}
 
 set PipelineEnableSignalInfo {[

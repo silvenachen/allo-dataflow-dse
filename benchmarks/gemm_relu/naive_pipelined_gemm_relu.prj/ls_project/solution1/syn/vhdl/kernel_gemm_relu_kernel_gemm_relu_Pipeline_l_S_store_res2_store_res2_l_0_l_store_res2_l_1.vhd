@@ -137,13 +137,13 @@ attribute shreg_extract : string;
     signal store_res2_l_0_fu_84 : STD_LOGIC_VECTOR (6 downto 0);
     signal ap_sig_allocacmp_store_res2_l_0_load : STD_LOGIC_VECTOR (6 downto 0);
     signal select_ln85_2_fu_184_p3 : STD_LOGIC_VECTOR (6 downto 0);
-    signal indvar_flatten58_fu_88 : STD_LOGIC_VECTOR (12 downto 0);
-    signal ap_sig_allocacmp_indvar_flatten58_load : STD_LOGIC_VECTOR (12 downto 0);
+    signal indvar_flatten167_fu_88 : STD_LOGIC_VECTOR (12 downto 0);
+    signal ap_sig_allocacmp_indvar_flatten167_load : STD_LOGIC_VECTOR (12 downto 0);
     signal add_ln85_1_fu_152_p2 : STD_LOGIC_VECTOR (12 downto 0);
     signal add_ln85_fu_164_p2 : STD_LOGIC_VECTOR (6 downto 0);
     signal trunc_ln88_fu_192_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal select_ln85_fu_176_p3 : STD_LOGIC_VECTOR (6 downto 0);
-    signal tmp_10_cast_fu_196_p3 : STD_LOGIC_VECTOR (11 downto 0);
+    signal tmp_134_cast_fu_196_p3 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln88_fu_204_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal add_ln88_fu_208_p2 : STD_LOGIC_VECTOR (11 downto 0);
     signal trunc_ln86_fu_219_p1 : STD_LOGIC_VECTOR (3 downto 0);
@@ -256,14 +256,14 @@ begin
     end process;
 
 
-    indvar_flatten58_fu_88_assign_proc : process (ap_clk)
+    indvar_flatten167_fu_88_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if (((ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (icmp_ln85_fu_146_p2 = ap_const_lv1_0))) then 
-                    indvar_flatten58_fu_88 <= add_ln85_1_fu_152_p2;
+                    indvar_flatten167_fu_88 <= add_ln85_1_fu_152_p2;
                 elsif ((ap_loop_init = ap_const_logic_1)) then 
-                    indvar_flatten58_fu_88 <= ap_const_lv13_0;
+                    indvar_flatten167_fu_88 <= ap_const_lv13_0;
                 end if;
             end if; 
         end if;
@@ -355,10 +355,10 @@ begin
         end if; 
     end process;
 
-    add_ln85_1_fu_152_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_indvar_flatten58_load) + unsigned(ap_const_lv13_1));
+    add_ln85_1_fu_152_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_indvar_flatten167_load) + unsigned(ap_const_lv13_1));
     add_ln85_fu_164_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_store_res2_l_0_load) + unsigned(ap_const_lv7_1));
     add_ln86_fu_229_p2 <= std_logic_vector(unsigned(select_ln85_fu_176_p3) + unsigned(ap_const_lv7_1));
-    add_ln88_fu_208_p2 <= std_logic_vector(unsigned(tmp_10_cast_fu_196_p3) + unsigned(zext_ln88_fu_204_p1));
+    add_ln88_fu_208_p2 <= std_logic_vector(unsigned(tmp_134_cast_fu_196_p3) + unsigned(zext_ln88_fu_204_p1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
         ap_block_pp0_stage0_01001 <= not((ap_const_boolean_1 = ap_const_boolean_1));
@@ -447,12 +447,12 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_indvar_flatten58_load_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, ap_loop_init, indvar_flatten58_fu_88)
+    ap_sig_allocacmp_indvar_flatten167_load_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, ap_loop_init, indvar_flatten167_fu_88)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
-            ap_sig_allocacmp_indvar_flatten58_load <= ap_const_lv13_0;
+            ap_sig_allocacmp_indvar_flatten167_load <= ap_const_lv13_0;
         else 
-            ap_sig_allocacmp_indvar_flatten58_load <= indvar_flatten58_fu_88;
+            ap_sig_allocacmp_indvar_flatten167_load <= indvar_flatten167_fu_88;
         end if; 
     end process;
 
@@ -487,7 +487,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln85_fu_146_p2 <= "1" when (ap_sig_allocacmp_indvar_flatten58_load = ap_const_lv13_1000) else "0";
+    icmp_ln85_fu_146_p2 <= "1" when (ap_sig_allocacmp_indvar_flatten167_load = ap_const_lv13_1000) else "0";
     icmp_ln86_fu_170_p2 <= "1" when (ap_sig_allocacmp_store_res2_l_1_load = ap_const_lv7_40) else "0";
     icmp_ln89_fu_223_p2 <= "1" when (trunc_ln86_fu_219_p1 = ap_const_lv4_F) else "0";
     m_axi_gmem2_ARADDR <= ap_const_lv64_0;
@@ -544,7 +544,7 @@ begin
     select_ln89_fu_295_p3 <= 
         ap_const_lv480_lc_1 when (icmp_ln89_reg_354(0) = '1') else 
         tmp_1_fu_287_p3;
-    tmp_10_cast_fu_196_p3 <= (trunc_ln88_fu_192_p1 & ap_const_lv6_0);
+    tmp_134_cast_fu_196_p3 <= (trunc_ln88_fu_192_p1 & ap_const_lv6_0);
     tmp_1_fu_287_p3 <= (bitcast_ln89_fu_265_p1 & tmp_s_fu_277_p4);
     tmp_s_fu_277_p4 <= select_ln85_1_fu_258_p3(479 downto 32);
     trunc_ln86_fu_219_p1 <= select_ln85_fu_176_p3(4 - 1 downto 0);

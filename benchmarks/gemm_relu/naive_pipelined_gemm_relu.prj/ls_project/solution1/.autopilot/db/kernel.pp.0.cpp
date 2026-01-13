@@ -42004,8 +42004,8 @@ void gemm_stage(
   l_S_i_j_k_0_i: for (int i = 0; i < 64; i++) {
     l_k: for (int k = 0; k < 64; k++) {
       l_j: for (int j = 0; j < 64; j++) {
-#pragma HLS pipeline II=1
- float v6 = v0[i][k];
+
+        float v6 = v0[i][k];
         float v7 = v1[k][j];
         float v8 = v6 * v7;
         float v9 = v2[i][j];

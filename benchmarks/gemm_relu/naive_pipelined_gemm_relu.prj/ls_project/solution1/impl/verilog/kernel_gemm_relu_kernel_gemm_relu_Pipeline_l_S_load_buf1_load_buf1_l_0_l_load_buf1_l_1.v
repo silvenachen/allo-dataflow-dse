@@ -269,7 +269,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+        if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
             load_buf1_l_0_fu_78 <= 7'd0;
         end else if ((ap_enable_reg_pp0_iter2 == 1'b1)) begin
             load_buf1_l_0_fu_78 <= select_ln72_2_fu_226_p3;
@@ -289,7 +289,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+        if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
             shiftreg90_fu_70 <= 480'd0;
         end else if ((ap_enable_reg_pp0_iter2 == 1'b1)) begin
             shiftreg90_fu_70 <= {{ap_phi_mux_empty_phi_fu_113_p4[511:32]}};
@@ -385,7 +385,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0))) begin
+    if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
         ap_sig_allocacmp_indvar_flatten7_load = 13'd0;
     end else begin
         ap_sig_allocacmp_indvar_flatten7_load = indvar_flatten7_fu_82;
@@ -393,7 +393,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0))) begin
+    if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
         ap_sig_allocacmp_load_buf1_l_1_load = 7'd0;
     end else begin
         ap_sig_allocacmp_load_buf1_l_1_load = load_buf1_l_1_fu_74;

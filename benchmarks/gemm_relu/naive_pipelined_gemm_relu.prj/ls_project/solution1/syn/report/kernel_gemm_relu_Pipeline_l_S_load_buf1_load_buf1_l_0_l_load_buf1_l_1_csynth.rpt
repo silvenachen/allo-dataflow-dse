@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'
 ================================================================
-* Date:           Fri Jan  9 17:50:35 2026
+* Date:           Tue Jan 13 11:00:55 2026
 
 * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
 * Project:        ls_project

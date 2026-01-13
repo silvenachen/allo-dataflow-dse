@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1 opened at Fri Jan 09 17:49:43 EST 2026
+INFO-FLOW: Workspace /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1 opened at Tue Jan 13 10:58:01 EST 2026
 Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
 INFO: [HLS 200-1505] Using flow_target 'vitis'
 Execute     get_config_interface -m_axi_latency 
@@ -29,7 +29,7 @@ DBG:HLSDevice: init success
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.hlp 
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
 INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
-Command     create_platform done; 1.61 sec.
+Command     create_platform done; 1.66 sec.
 Execute     source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/xilinx.gen 
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/plb46.gen 
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/interface/axi4.gen 
@@ -45,7 +45,7 @@ Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technolo
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/DSP48/dsp48.gen 
 Execute     ap_part_info -name xcvu11p-flga2577-1-e -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 1.73 sec.
+Command   set_part done; 1.78 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute     ap_set_clock -name default -period 10 -default=false 
@@ -58,8 +58,8 @@ Execute     ap_part_info -name xcvu11p-flga2577-1-e -data info
 Execute     source run_sim.tcl 
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 5.58 sec.
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.93 seconds. CPU system time: 0.58 seconds. Elapsed time: 5.58 seconds; current allocated memory: 250.668 MB.
+Command   csim_design done; 5.54 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.89 seconds. CPU system time: 0.57 seconds. Elapsed time: 5.54 seconds; current allocated memory: 250.652 MB.
 Execute   csynth_design 
 INFO: [HLS 200-1510] Running: csynth_design 
 Execute     get_config_compile -effort 
@@ -74,7 +74,7 @@ Execute     get_config_compile -skip_transform
 Execute     get_config_compile -pre_tcl 
 Execute     get_config_compile -keep_printf 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 250.903 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 250.887 MB.
 INFO: [HLS 200-10] Analyzing design file 'kernel.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -83,40 +83,40 @@ Execute       ap_part_info -name xcvu11p-flga2577-1-e -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 Execute       ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang kernel.cpp -foptimization-record-file=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.kernel.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -Wall -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot -I /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -hls-platform-db-name=/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_slow > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.kernel.cpp.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.kernel.cpp.err.log 
-Command       ap_eval done; 2.93 sec.
-INFO-FLOW: Done: GCC PP 39 time: 2.9 seconds per iteration
+Command       ap_eval done; 0.16 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
 Execute       set_directive_top kernel_gemm_relu -name=kernel_gemm_relu 
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/try/try.tcl 
 Execute       list_core -type functional_unit 
 Execute       ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -hls-platform-db-name=/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_slow > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.err.log 
-Command       ap_eval done; 2.76 sec.
+Command       ap_eval done; 2.66 sec.
 Execute       clang_tidy xilinx-systemc-detector /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  -directive=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/.systemc_flag -fix-errors /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 5.66 sec.
+Command       clang_tidy done; 2.74 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  -directive=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/all.directive.json -fix-errors /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 3.09 sec.
+Command       clang_tidy done; 3.11 sec.
 Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 3.52 sec.
+Command       clang_tidy done; 3.45 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 6.6 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang-tidy.kernel.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang-tidy.kernel.pp.0.cpp.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang-tidy.kernel.pp.0.cpp.err.log 
-Command         ap_eval done; 5.55 sec.
+Command         ap_eval done; 5.29 sec.
 Execute         source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 5.96 sec.
+Command       clang_tidy done; 5.71 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/xilinx-dataflow-lawyer.kernel.pp.0.cpp.diag.yml /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/xilinx-dataflow-lawyer.kernel.pp.0.cpp.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/xilinx-dataflow-lawyer.kernel.pp.0.cpp.err.log 
-Command       ap_eval done; 3.09 sec.
+Command       ap_eval done; 2.6 sec.
 Execute       ap_part_info -name xcvu11p-flga2577-1-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute       ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.kernel.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.pp.0.cpp -Wall -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot -I /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.bc -hls-platform-db-name=/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_slow > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.kernel.pp.0.cpp.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.kernel.pp.0.cpp.err.log 
-Command       ap_eval done; 2.73 sec.
+Command       ap_eval done; 2.68 sec.
 WARNING: [HLS 207-5301] unused parameter 'print': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1241_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1241:7
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_716_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_ref.h:716:5
@@ -160,9 +160,9 @@ WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_934_21': /tmp/sli3079-xilinx-20
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_940_22': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:940:17
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_944_23': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:944:17
 WARNING: [HLS 207-5307] unused variable 'wf': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:995:26
-WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1200:30
-WARNING: [HLS 207-5307] unused variable 'x_msb_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1207:29
 WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1199:30
+WARNING: [HLS 207-5307] unused variable 'x_msb_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1207:29
+WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1200:30
 WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1353:30
 WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1352:30
 WARNING: [HLS 207-5307] unused variable 'f_x_msb_4_s': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1820:30
@@ -265,9 +265,9 @@ WARNING: [HLS 207-5297] unused label 'x_conj_sq_complex': /tmp/sli3079-xilinx-20
 WARNING: [HLS 207-5297] unused label 'x_conj_complex': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:326:5
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_23_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_mad_apfixed.h:23:12
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_66_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cbrt_apfixed.h:66:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:107:5
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_195_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:195:8
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_75_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:75:9
-WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:107:5
 WARNING: [HLS 207-5297] unused label 'l_j': kernel.cpp:27:7
 WARNING: [HLS 207-5297] unused label 'l_k': kernel.cpp:26:5
 WARNING: [HLS 207-5297] unused label 'l_S_i_j_k_0_i': kernel.cpp:25:3
@@ -281,30 +281,26 @@ WARNING: [HLS 207-5297] unused label 'l_store_res2_l_1': kernel.cpp:86:5
 WARNING: [HLS 207-5297] unused label 'l_S_store_res2_store_res2_l_0': kernel.cpp:85:3
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_108_2': kernel.cpp:108:5
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_1': kernel.cpp:107:3
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.97 seconds. CPU system time: 1.53 seconds. Elapsed time: 30.07 seconds; current allocated memory: 255.747 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.91 seconds. CPU system time: 1.33 seconds. Elapsed time: 23.4 seconds; current allocated memory: 255.746 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.0.bc -args  "/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.g.bc"  
 Execute         ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.g.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.0.bc > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
-Command         ap_eval done; 0.57 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.57 sec.
 Execute       run_link_or_opt -opt -out /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 Execute         ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.1.lower.bc > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
-Command         ap_eval done; 3.04 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 3.04 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/lib/libhlsm_39.bc /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/lib/libhlsm_39.bc /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/lib/libhlsmc++_39.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.2.m1.bc > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
-Command         ap_eval done; 3.12 sec.
+Command         ap_eval done; 2.47 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 3.14 sec.
+Command       run_link_or_opt done; 2.47 sec.
 Execute       run_link_or_opt -opt -out /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=kernel_gemm_relu -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=kernel_gemm_relu -reflow-float-conversion -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
-Command         ap_eval done; 0.88 sec.
+Command         ap_eval done; 0.87 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.88 sec.
+Command       run_link_or_opt done; 0.87 sec.
 Execute       run_link_or_opt -out /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/lib/libfloatconversion_39.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.4.m2.bc > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
 INFO-FLOW: 
@@ -347,7 +343,7 @@ INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 Execute       ap_eval exec -ignorestderr /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=kernel_gemm_relu -mllvm -hls-db-dir -mllvm /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/../../../kernel.xml -mllvm -top-io-mapping-info=/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshhold=200000 -mllvm -assume-maxi-align=64 -mllvm -no-unaligned-maxi-accesses=false -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-disaggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -x ir /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_slow > /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
-Command       ap_eval done; 0.28 sec.
+Command       ap_eval done; 0.13 sec.
 INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
 INFO: [HLS 214-284] Auto array partition mode is set into default.
 INFO: [HLS 214-178] Inlining function 'load_buf0' into 'kernel_gemm_relu' (kernel.cpp:98:0)
@@ -360,31 +356,34 @@ INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has bee
 INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on port 'gmem1'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:72:32)
 INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on port 'gmem2'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:85:34)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/../../../kernel.xml -> /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.59 seconds. CPU system time: 0.36 seconds. Elapsed time: 8.32 seconds; current allocated memory: 256.161 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 256.163 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.51 seconds. CPU system time: 0.37 seconds. Elapsed time: 3.94 seconds; current allocated memory: 256.176 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 256.178 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top kernel_gemm_relu -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.0.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 1.22 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.93 seconds. CPU system time: 0 seconds. Elapsed time: 1.22 seconds; current allocated memory: 259.113 MB.
+Command         transform done; 0.77 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.77 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.78 seconds; current allocated memory: 259.125 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.1.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.93 sec.
+Command         transform done; 0.78 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.2.prechk.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.93 seconds. CPU system time: 0 seconds. Elapsed time: 0.94 seconds; current allocated memory: 258.385 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.79 seconds. CPU system time: 0 seconds. Elapsed time: 0.79 seconds; current allocated memory: 258.400 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.g.1.bc to /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.o.1.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.o.1.tmp.bc -f 
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_108_2' (kernel.cpp:108) in function 'kernel_gemm_relu' automatically.
-Command         transform done; 0.96 sec.
+INFO: [XFORM 203-510] Pipelining loop 'l_k' (kernel.cpp:26) in function 'kernel_gemm_relu' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'l_k' (kernel.cpp:26) in function 'kernel_gemm_relu' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'l_j' (kernel.cpp:27) in function 'kernel_gemm_relu' completely with a factor of 64.
+Command         transform done; 0.9 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.o.1.tmp.bc -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.98 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.99 seconds; current allocated memory: 279.293 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.95 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.97 seconds; current allocated memory: 279.933 MB.
 Execute         get_config_compile -enable_auto_rewind 
 Execute         get_config_compile -enable_loop_extract 
 INFO-FLOW: Building ssdm...
@@ -392,7 +391,6 @@ Execute         transform -hls -function-uniquify -auto-function-inline -globald
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf0_load_buf0_l_0' (kernel.cpp:59:41) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf1_load_buf1_l_0' (kernel.cpp:72:41) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_107_1' (kernel.cpp:107:30) in function 'kernel_gemm_relu'.
-INFO: [XFORM 203-541] Flattening a loop nest 'l_k' (kernel.cpp:26:19) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_i_j_k_0_i' (kernel.cpp:25:27) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_i_j_0_i1' (kernel.cpp:44:26) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_store_res2_store_res2_l_0' (kernel.cpp:85:43) in function 'kernel_gemm_relu'.
@@ -401,11 +399,11 @@ INFO: [HLS 200-472] Inferring partial write operation for 'C' (kernel.cpp:34:18)
 INFO: [HLS 200-472] Inferring partial write operation for 'Y' (kernel.cpp:50:19)
 INFO: [HLS 200-472] Inferring partial write operation for 'buf1' (kernel.cpp:76:41)
 INFO: [HLS 200-472] Inferring partial write operation for 'buf0' (kernel.cpp:63:41)
-Command         transform done; 0.39 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 334.529 MB.
+Command         transform done; 1.77 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.75 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.77 seconds; current allocated memory: 338.682 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 3.54 sec.
-Command     elaborate done; 41.94 sec.
+Command       opt_and_import_c done; 4.31 sec.
+Command     elaborate done; 31.65 sec.
 Execute     ap_eval exec zip -j /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
@@ -416,12 +414,12 @@ Execute       get_model_list kernel_gemm_relu -filter all-wo-channel -topdown
 Execute       preproc_iomode -model kernel_gemm_relu 
 Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 
 Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
-Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
 Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 
 Execute       preproc_iomode -model kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
 Execute       get_model_list kernel_gemm_relu -filter all-wo-channel 
-INFO-FLOW: Model list for configure: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
+INFO-FLOW: Model list for configure: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
 INFO-FLOW: Configuring Module : kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 ...
 Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
 Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
@@ -431,9 +429,9 @@ Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_l_S_load_buf1_
 INFO-FLOW: Configuring Module : kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 ...
 Execute       set_default_model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
 Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
-INFO-FLOW: Configuring Module : kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j ...
-Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+INFO-FLOW: Configuring Module : kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k ...
+Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 INFO-FLOW: Configuring Module : kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 ...
 Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
 Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
@@ -443,7 +441,7 @@ Execute       apply_spec_resource_limit kernel_gemm_relu_Pipeline_l_S_store_res2
 INFO-FLOW: Configuring Module : kernel_gemm_relu ...
 Execute       set_default_model kernel_gemm_relu 
 Execute       apply_spec_resource_limit kernel_gemm_relu 
-INFO-FLOW: Model list for preprocess: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
+INFO-FLOW: Model list for preprocess: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
 INFO-FLOW: Preprocessing Module: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 ...
 Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
 Execute       cdfg_preprocess -model kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
@@ -456,10 +454,10 @@ INFO-FLOW: Preprocessing Module: kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITI
 Execute       set_default_model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
 Execute       cdfg_preprocess -model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
 Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
-INFO-FLOW: Preprocessing Module: kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j ...
-Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       cdfg_preprocess -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+INFO-FLOW: Preprocessing Module: kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k ...
+Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       cdfg_preprocess -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 INFO-FLOW: Preprocessing Module: kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 ...
 Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
 Execute       cdfg_preprocess -model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
@@ -472,7 +470,7 @@ INFO-FLOW: Preprocessing Module: kernel_gemm_relu ...
 Execute       set_default_model kernel_gemm_relu 
 Execute       cdfg_preprocess -model kernel_gemm_relu 
 Execute       rtl_gen_preprocess kernel_gemm_relu 
-INFO-FLOW: Model list for synthesis: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
+INFO-FLOW: Model list for synthesis: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -482,7 +480,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.12 seconds; current allocated memory: 334.942 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.1 seconds; current allocated memory: 339.317 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -495,7 +493,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 335.183 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 339.557 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -507,10 +505,11 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 
 Execute       schedule -model kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 
 INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'buf1'. Use bind_storage pragma to override this type.
 INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 335.380 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 339.736 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -523,7 +522,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 335.597 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 339.957 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -538,7 +537,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_107_1_VITIS_LOOP_108_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_107_1_VITIS_LOOP_108_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 335.736 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 340.096 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -551,40 +550,52 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 335.874 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 340.230 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
 Execute       db_write -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.bind.adb -f 
 INFO-FLOW: Finish binding kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j' 
+INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       schedule -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       schedule -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'l_S_i_j_k_0_i_l_k_l_j'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'l_S_i_j_k_0_i_l_k_l_j'
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'buf1'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'l_S_i_j_k_0_i_l_k'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-885] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to schedule 'load' operation ('C_load_59', kernel.cpp:32) on array 'C' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'C'.
+WARNING: [HLS 200-885] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to schedule 'load' operation ('C_load_61', kernel.cpp:32) on array 'C' due to limited memory ports (II = 68). Please consider using a memory core with more ports or partitioning the array 'C'.
+WARNING: [HLS 200-885] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to schedule 'load' operation ('C_load_63', kernel.cpp:32) on array 'C' due to limited memory ports (II = 69). Please consider using a memory core with more ports or partitioning the array 'C'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 70, Depth = 70, loop 'l_S_i_j_k_0_i_l_k'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 336.143 MB.
-Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.verbose.sched.rpt 
+Command       schedule done; 131.73 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 131.48 seconds. CPU system time: 0.02 seconds. Elapsed time: 131.76 seconds; current allocated memory: 342.590 MB.
+Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Execute       db_write -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.sched.adb -f 
-INFO-FLOW: Finish scheduling kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.
-Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       bind -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+Command       syn_report done; 0.44 sec.
+Execute       db_write -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.sched.adb -f 
+INFO-FLOW: Finish scheduling kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.
+Execute       set_default_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       bind -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 336.460 MB.
-Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.verbose.bind.rpt 
+Command       bind done; 0.16 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.63 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.64 seconds; current allocated memory: 345.412 MB.
+Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Execute       db_write -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.bind.adb -f 
-INFO-FLOW: Finish binding kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.
+Command       syn_report done; 0.37 sec.
+Execute       db_write -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.bind.adb -f 
+INFO-FLOW: Finish binding kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -594,7 +605,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'l_S_i_j_0_i1_l_j1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_i_j_0_i1_l_j1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 336.636 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.46 seconds; current allocated memory: 345.580 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -607,7 +618,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 336.816 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 345.762 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -622,7 +633,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'l_S_store_res2_store_res2_l_0_l_store_res2_l_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_store_res2_store_res2_l_0_l_store_res2_l_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 336.996 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 345.941 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -635,7 +646,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 337.240 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 346.169 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -649,7 +660,7 @@ Execute       schedule -model kernel_gemm_relu
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
 Command       schedule done; 0.19 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 337.692 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 346.616 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -663,12 +674,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.25 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.56 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 338.354 MB.
+Command       bind done; 0.24 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 347.272 MB.
 Execute       syn_report -verbosereport -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.24 sec.
+Command       syn_report done; 0.22 sec.
 Execute       db_write -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.bind.adb -f 
 INFO-FLOW: Finish binding kernel_gemm_relu.
 Execute       get_model_list kernel_gemm_relu -filter all-wo-channel 
@@ -676,11 +687,11 @@ INFO-FLOW: Preprocessing for RTLGen ...
 Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
 Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 
 Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
-Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
 Execute       rtl_gen_preprocess kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 
 Execute       rtl_gen_preprocess kernel_gemm_relu 
-INFO-FLOW: Model list for RTL generation: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
+INFO-FLOW: Model list for RTL generation: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -703,7 +714,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 338.924 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 347.863 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 
@@ -741,7 +752,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 340.425 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 349.372 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 
@@ -766,7 +777,7 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 -top_prefix kernel_gemm_relu_ -sub_prefix kernel_gemm_relu_ -mg_file /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 341.586 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 350.552 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
@@ -783,33 +794,38 @@ Execute       db_write -model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_L
 Execute       db_write -model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 -bindview -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 -p /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j' 
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -top_prefix kernel_gemm_relu_ -sub_prefix kernel_gemm_relu_ -mg_file /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.compgen.tcl 
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j' pipeline 'l_S_i_j_k_0_i_l_k_l_j' pipeline type 'loop pipeline'
+Execute       create_rtl_model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -top_prefix kernel_gemm_relu_ -sub_prefix kernel_gemm_relu_ -mg_file /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 342.826 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k'.
+Command       create_rtl_model done; 0.16 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 355.885 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
-Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
-Execute       syn_report -csynth -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/report/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_csynth.rpt 
+Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
+Execute       syn_report -csynth -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/report/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Execute       syn_report -rtlxml -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/report/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_csynth.xml 
+Command       syn_report done; 0.24 sec.
+Execute       syn_report -rtlxml -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/report/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_csynth.xml 
 Execute         get_solution -flow_target
 Execute           get_solution -flow_target 
-Execute       syn_report -verbosereport -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.verbose.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       syn_report -verbosereport -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Execute       db_write -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -f -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.adb 
-Execute       db_write -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -bindview -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/design.bindinfo.xml 
-Execute       gen_tb_info kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j -p /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j 
+Command       syn_report done; 0.5 sec.
+Execute       db_write -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -f -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.adb 
+Command       db_write done; 0.17 sec.
+Execute       db_write -model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -bindview -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/design.bindinfo.xml 
+Command       db_write done; 0.21 sec.
+Execute       gen_tb_info kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k -p /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -821,7 +837,7 @@ Execute       create_rtl_model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 -top_
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1' pipeline 'l_S_i_j_0_i1_l_j1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 344.529 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.37 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.42 seconds; current allocated memory: 367.667 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 
@@ -860,7 +876,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWUSER' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_BREADY' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 345.875 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 368.971 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 
 Execute       gen_rtl kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 
@@ -893,7 +909,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/v35' to '
 INFO: [RTGEN 206-500] Setting interface mode on function 'kernel_gemm_relu' to 's_axilite & ap_ctrl_chain'.
 INFO: [RTGEN 206-100] Bundling port 'v33', 'v34', 'v35' and 'return' to AXI-Lite port control.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 350.351 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 373.476 MB.
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.rtl_wrap.cfg.tcl 
 Execute       gen_rtl kernel_gemm_relu -istop -style xilinx -f -lang vhdl -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/vhdl/kernel_gemm_relu 
 Execute       gen_rtl kernel_gemm_relu -istop -style xilinx -f -lang vlog -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/verilog/kernel_gemm_relu 
@@ -906,13 +922,13 @@ Execute           get_solution -flow_target
 Execute       syn_report -verbosereport -model kernel_gemm_relu -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.25 sec.
+Command       syn_report done; 0.23 sec.
 Execute       db_write -model kernel_gemm_relu -f -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.adb 
 Execute       db_write -model kernel_gemm_relu -bindview -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info kernel_gemm_relu -p /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu 
 Execute       export_constraint_db -f -tool general -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.constraint.tcl 
 Execute       syn_report -designview -model kernel_gemm_relu -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.design.xml 
-Command       syn_report done; 0.17 sec.
+Command       syn_report done; 0.35 sec.
 Execute       syn_report -csynthDesign -model kernel_gemm_relu -o /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/syn/report/csynth.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -926,7 +942,7 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
 Execute       sc_get_portdomain kernel_gemm_relu 
-INFO-FLOW: Model list for RTL component generation: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
+INFO-FLOW: Model list for RTL component generation: kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
 INFO-FLOW: Handling components in module [kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1] ... 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.compgen.tcl 
 INFO-FLOW: Found component kernel_gemm_relu_flow_control_loop_pipe_sequential_init.
@@ -939,8 +955,8 @@ INFO-FLOW: Handling components in module [kernel_gemm_relu_Pipeline_VITIS_LOOP_1
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.compgen.tcl 
 INFO-FLOW: Found component kernel_gemm_relu_flow_control_loop_pipe_sequential_init.
 INFO-FLOW: Append model kernel_gemm_relu_flow_control_loop_pipe_sequential_init
-INFO-FLOW: Handling components in module [kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j] ... 
-Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.compgen.tcl 
+INFO-FLOW: Handling components in module [kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k] ... 
+Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.compgen.tcl 
 INFO-FLOW: Found component kernel_gemm_relu_fadd_32ns_32ns_32_3_full_dsp_1.
 INFO-FLOW: Append model kernel_gemm_relu_fadd_32ns_32ns_32_3_full_dsp_1
 INFO-FLOW: Found component kernel_gemm_relu_fmul_32ns_32ns_32_2_max_dsp_1.
@@ -961,6 +977,8 @@ INFO-FLOW: Handling components in module [kernel_gemm_relu] ...
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.compgen.tcl 
 INFO-FLOW: Found component kernel_gemm_relu_buf0.
 INFO-FLOW: Append model kernel_gemm_relu_buf0
+INFO-FLOW: Found component kernel_gemm_relu_buf1.
+INFO-FLOW: Append model kernel_gemm_relu_buf1
 INFO-FLOW: Found component kernel_gemm_relu_C.
 INFO-FLOW: Append model kernel_gemm_relu_C
 INFO-FLOW: Found component kernel_gemm_relu_control_s_axi.
@@ -974,12 +992,12 @@ INFO-FLOW: Append model kernel_gemm_relu_gmem2_m_axi
 INFO-FLOW: Append model kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
 INFO-FLOW: Append model kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
 INFO-FLOW: Append model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2
-INFO-FLOW: Append model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j
+INFO-FLOW: Append model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k
 INFO-FLOW: Append model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1
 INFO-FLOW: Append model kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
 INFO-FLOW: Append model kernel_gemm_relu
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_fadd_32ns_32ns_32_3_full_dsp_1 kernel_gemm_relu_fmul_32ns_32ns_32_2_max_dsp_1 kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_fcmp_32ns_32ns_1_2_no_dsp_1 kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_buf0 kernel_gemm_relu_C kernel_gemm_relu_control_s_axi kernel_gemm_relu_gmem0_m_axi kernel_gemm_relu_gmem1_m_axi kernel_gemm_relu_gmem2_m_axi kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
+INFO-FLOW: All models in this session: kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_fadd_32ns_32ns_32_3_full_dsp_1 kernel_gemm_relu_fmul_32ns_32ns_32_2_max_dsp_1 kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_fcmp_32ns_32ns_1_2_no_dsp_1 kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_flow_control_loop_pipe_sequential_init kernel_gemm_relu_buf0 kernel_gemm_relu_buf1 kernel_gemm_relu_C kernel_gemm_relu_control_s_axi kernel_gemm_relu_gmem0_m_axi kernel_gemm_relu_gmem1_m_axi kernel_gemm_relu_gmem2_m_axi kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1 kernel_gemm_relu
 INFO-FLOW: Generating /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/autopilot.rtl.models.txt file...
 INFO-FLOW: To file: write model kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model kernel_gemm_relu_flow_control_loop_pipe_sequential_init
@@ -991,6 +1009,7 @@ INFO-FLOW: To file: write model kernel_gemm_relu_fcmp_32ns_32ns_1_2_no_dsp_1
 INFO-FLOW: To file: write model kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model kernel_gemm_relu_buf0
+INFO-FLOW: To file: write model kernel_gemm_relu_buf1
 INFO-FLOW: To file: write model kernel_gemm_relu_C
 INFO-FLOW: To file: write model kernel_gemm_relu_control_s_axi
 INFO-FLOW: To file: write model kernel_gemm_relu_gmem0_m_axi
@@ -999,7 +1018,7 @@ INFO-FLOW: To file: write model kernel_gemm_relu_gmem2_m_axi
 INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
 INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
 INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2
-INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j
+INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k
 INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1
 INFO-FLOW: To file: write model kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
 INFO-FLOW: To file: write model kernel_gemm_relu
@@ -1047,6 +1066,7 @@ kernel_gemm_relu_fcmp_32ns_32ns_1_2_no_dsp_1
 kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 kernel_gemm_relu_buf0
+kernel_gemm_relu_buf1
 kernel_gemm_relu_C
 kernel_gemm_relu_control_s_axi
 kernel_gemm_relu_gmem0_m_axi
@@ -1055,7 +1075,7 @@ kernel_gemm_relu_gmem2_m_axi
 kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2
-kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j
+kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k
 kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1
 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
 kernel_gemm_relu
@@ -1068,11 +1088,14 @@ Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.compgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1.compgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.compgen.tcl 
-Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.compgen.tcl 
+Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.compgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1.compgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1.compgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.compgen.tcl 
 INFO: [RTMG 210-278] Implementing memory 'kernel_gemm_relu_buf0_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xcvu11p-flga2577-1-e -data names -quiet 
+Execute         ap_part_info -name xcvu11p-flga2577-1-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'kernel_gemm_relu_buf1_ram (RAM_1WnR)' using auto RAMs.
 Execute         ap_part_info -name xcvu11p-flga2577-1-e -data names -quiet 
 Execute         ap_part_info -name xcvu11p-flga2577-1-e -data info -quiet 
 INFO: [RTMG 210-278] Implementing memory 'kernel_gemm_relu_C_ram (RAM)' using auto RAMs.
@@ -1085,8 +1108,8 @@ Execute         ap_part_info -name xcvu11p-flga2577-1-e -data names -quiet
 Execute         ap_part_info -name xcvu11p-flga2577-1-e -data info -quiet 
 Execute         ap_part_info -name xcvu11p-flga2577-1-e -data names -quiet 
 Execute         ap_part_info -name xcvu11p-flga2577-1-e -data info -quiet 
-Command       ap_source done; 0.18 sec.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.78 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.9 seconds; current allocated memory: 355.984 MB.
+Command       ap_source done; 0.2 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.98 seconds. CPU system time: 0.1 seconds. Elapsed time: 1.08 seconds; current allocated memory: 379.315 MB.
 INFO-FLOW: DBG:PROC: ::AP::create_csynth_xml outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -1275,6 +1298,7 @@ kernel_gemm_relu_fcmp_32ns_32ns_1_2_no_dsp_1
 kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 kernel_gemm_relu_flow_control_loop_pipe_sequential_init
 kernel_gemm_relu_buf0
+kernel_gemm_relu_buf1
 kernel_gemm_relu_C
 kernel_gemm_relu_control_s_axi
 kernel_gemm_relu_gmem0_m_axi
@@ -1283,7 +1307,7 @@ kernel_gemm_relu_gmem2_m_axi
 kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
 kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
 kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2
-kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j
+kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k
 kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1
 kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
 kernel_gemm_relu
@@ -1306,7 +1330,7 @@ Execute       ap_part_info -name xcvu11p-flga2577-1-e -data info -quiet
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.tbgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1.tbgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2.tbgen.tcl 
-Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.tbgen.tcl 
+Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.tbgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1.tbgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1.tbgen.tcl 
 Execute       source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/naive_pipelined_gemm_relu.prj/ls_project/solution1/.autopilot/db/kernel_gemm_relu.tbgen.tcl 
@@ -1333,14 +1357,14 @@ Execute       send_msg_by_id INFO @200-1603@%s
 INFO: [HLS 200-1603] Design has MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
 INFO-FLOW: DBG:PUTS:       update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:       update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.13 seconds; current allocated memory: 363.240 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.21 seconds; current allocated memory: 387.705 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for kernel_gemm_relu.
 INFO: [VLOG 209-307] Generating Verilog RTL for kernel_gemm_relu.
 Execute       syn_report -model kernel_gemm_relu -printsummary 
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-Command     autosyn done; 5.05 sec.
-Command   csynth_design done; 47.02 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 33.45 seconds. CPU system time: 2.1 seconds. Elapsed time: 47.02 seconds; current allocated memory: 363.223 MB.
-Command ap_source done; 54.35 sec.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.45 MHz
+Command     autosyn done; 139.04 sec.
+Command   csynth_design done; 170.72 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 168.13 seconds. CPU system time: 2.06 seconds. Elapsed time: 170.72 seconds; current allocated memory: 387.689 MB.
+Command ap_source done; 178.08 sec.
 Execute cleanup_all 

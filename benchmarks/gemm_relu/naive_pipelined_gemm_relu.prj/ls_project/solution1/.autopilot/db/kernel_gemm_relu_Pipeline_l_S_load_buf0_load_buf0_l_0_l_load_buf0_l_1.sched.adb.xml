@@ -121,7 +121,7 @@ newFuncRoot:5 %sext_ln59_cast = sext i58 %sext_ln59_read
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem0, void @empty_0, i32 0, i32 0, void @empty_5, i32 64, i32 4096, void @empty, void @empty_6, void @empty_5, i32 16, i32 16, i32 16, i32 16, void @empty_5, void @empty_5
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem0, void @empty_0, i32 0, i32 0, void @empty_19, i32 64, i32 4096, void @empty, void @empty_6, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -680,7 +680,7 @@ load_buf0.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-.split26:18 %specpipeline_ln60 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5
+.split26:18 %specpipeline_ln60 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln60"/></StgValue>

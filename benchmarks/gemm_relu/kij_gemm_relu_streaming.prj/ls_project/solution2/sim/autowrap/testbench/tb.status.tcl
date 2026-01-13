@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/kij_gemm_relu_streaming.prj/ls_project/solution2/./sim/autowrap/testbench/kernel.cpp_pre.cpp.tb.cpp

@@ -34,7 +34,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163/grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_activity": {
+				"grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163/grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

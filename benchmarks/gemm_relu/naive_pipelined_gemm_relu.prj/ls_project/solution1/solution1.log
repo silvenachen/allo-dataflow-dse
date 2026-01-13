@@ -16,9 +16,9 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.93 seconds. CPU system time: 0.58 seconds. Elapsed time: 5.58 seconds; current allocated memory: 250.668 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.89 seconds. CPU system time: 0.57 seconds. Elapsed time: 5.54 seconds; current allocated memory: 250.652 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 250.903 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 250.887 MB.
 INFO: [HLS 200-10] Analyzing design file 'kernel.cpp' ... 
 WARNING: [HLS 207-5301] unused parameter 'print': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1241_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1241:7
@@ -63,9 +63,9 @@ WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_934_21': /tmp/sli3079-xilinx-20
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_940_22': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:940:17
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_944_23': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:944:17
 WARNING: [HLS 207-5307] unused variable 'wf': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:995:26
-WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1200:30
-WARNING: [HLS 207-5307] unused variable 'x_msb_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1207:29
 WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1199:30
+WARNING: [HLS 207-5307] unused variable 'x_msb_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1207:29
+WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1200:30
 WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1353:30
 WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1352:30
 WARNING: [HLS 207-5307] unused variable 'f_x_msb_4_s': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1820:30
@@ -168,9 +168,9 @@ WARNING: [HLS 207-5297] unused label 'x_conj_sq_complex': /tmp/sli3079-xilinx-20
 WARNING: [HLS 207-5297] unused label 'x_conj_complex': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:326:5
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_23_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_mad_apfixed.h:23:12
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_66_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cbrt_apfixed.h:66:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:107:5
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_195_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:195:8
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_75_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:75:9
-WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:107:5
 WARNING: [HLS 207-5297] unused label 'l_j': kernel.cpp:27:7
 WARNING: [HLS 207-5297] unused label 'l_k': kernel.cpp:26:5
 WARNING: [HLS 207-5297] unused label 'l_S_i_j_k_0_i': kernel.cpp:25:3
@@ -184,7 +184,7 @@ WARNING: [HLS 207-5297] unused label 'l_store_res2_l_1': kernel.cpp:86:5
 WARNING: [HLS 207-5297] unused label 'l_S_store_res2_store_res2_l_0': kernel.cpp:85:3
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_108_2': kernel.cpp:108:5
 WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_1': kernel.cpp:107:3
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.97 seconds. CPU system time: 1.53 seconds. Elapsed time: 30.07 seconds; current allocated memory: 255.747 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 21.91 seconds. CPU system time: 1.33 seconds. Elapsed time: 23.4 seconds; current allocated memory: 255.746 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
 INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
 INFO: [HLS 214-284] Auto array partition mode is set into default.
@@ -197,18 +197,20 @@ INFO: [HLS 214-270] Starting automatic array partition analysis...
 INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on port 'gmem0'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:59:32)
 INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on port 'gmem1'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:72:32)
 INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on port 'gmem2'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:85:34)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.59 seconds. CPU system time: 0.36 seconds. Elapsed time: 8.32 seconds; current allocated memory: 256.161 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 256.163 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.51 seconds. CPU system time: 0.37 seconds. Elapsed time: 3.94 seconds; current allocated memory: 256.176 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 256.178 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.93 seconds. CPU system time: 0 seconds. Elapsed time: 1.22 seconds; current allocated memory: 259.113 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.77 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.78 seconds; current allocated memory: 259.125 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.93 seconds. CPU system time: 0 seconds. Elapsed time: 0.94 seconds; current allocated memory: 258.385 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.79 seconds. CPU system time: 0 seconds. Elapsed time: 0.79 seconds; current allocated memory: 258.400 MB.
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_108_2' (kernel.cpp:108) in function 'kernel_gemm_relu' automatically.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.98 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.99 seconds; current allocated memory: 279.293 MB.
+INFO: [XFORM 203-510] Pipelining loop 'l_k' (kernel.cpp:26) in function 'kernel_gemm_relu' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'l_k' (kernel.cpp:26) in function 'kernel_gemm_relu' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'l_j' (kernel.cpp:27) in function 'kernel_gemm_relu' completely with a factor of 64.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.95 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.97 seconds; current allocated memory: 279.933 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf0_load_buf0_l_0' (kernel.cpp:59:41) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf1_load_buf1_l_0' (kernel.cpp:72:41) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_107_1' (kernel.cpp:107:30) in function 'kernel_gemm_relu'.
-INFO: [XFORM 203-541] Flattening a loop nest 'l_k' (kernel.cpp:26:19) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_i_j_k_0_i' (kernel.cpp:25:27) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_i_j_0_i1' (kernel.cpp:44:26) in function 'kernel_gemm_relu'.
 INFO: [XFORM 203-541] Flattening a loop nest 'l_S_store_res2_store_res2_l_0' (kernel.cpp:85:43) in function 'kernel_gemm_relu'.
@@ -217,7 +219,7 @@ INFO: [HLS 200-472] Inferring partial write operation for 'C' (kernel.cpp:34:18)
 INFO: [HLS 200-472] Inferring partial write operation for 'Y' (kernel.cpp:50:19)
 INFO: [HLS 200-472] Inferring partial write operation for 'buf1' (kernel.cpp:76:41)
 INFO: [HLS 200-472] Inferring partial write operation for 'buf0' (kernel.cpp:63:41)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 334.529 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.75 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.77 seconds; current allocated memory: 338.682 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'kernel_gemm_relu' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -227,27 +229,28 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.12 seconds; current allocated memory: 334.942 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.1 seconds; current allocated memory: 339.317 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 335.183 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 339.557 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'buf1'. Use bind_storage pragma to override this type.
 INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 335.380 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 339.736 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 335.597 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 339.957 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -255,27 +258,35 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_107_1_VITIS_LOOP_108_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_107_1_VITIS_LOOP_108_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 335.736 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 340.096 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 335.874 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 340.230 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j' 
+INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'l_S_i_j_k_0_i_l_k_l_j'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'l_S_i_j_k_0_i_l_k_l_j'
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'buf1'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'l_S_i_j_k_0_i_l_k'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('C_addr_write_ln34', kernel.cpp:34) of variable 'v', kernel.cpp:33 on array 'C' and 'load' operation ('C_load', kernel.cpp:32) on array 'C'.
+WARNING: [HLS 200-885] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to schedule 'load' operation ('C_load_59', kernel.cpp:32) on array 'C' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'C'.
+WARNING: [HLS 200-885] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to schedule 'load' operation ('C_load_61', kernel.cpp:32) on array 'C' due to limited memory ports (II = 68). Please consider using a memory core with more ports or partitioning the array 'C'.
+WARNING: [HLS 200-885] The II Violation in module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' (loop 'l_S_i_j_k_0_i_l_k'): Unable to schedule 'load' operation ('C_load_63', kernel.cpp:32) on array 'C' due to limited memory ports (II = 69). Please consider using a memory core with more ports or partitioning the array 'C'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 70, Depth = 70, loop 'l_S_i_j_k_0_i_l_k'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 336.143 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 131.48 seconds. CPU system time: 0.02 seconds. Elapsed time: 131.76 seconds; current allocated memory: 342.590 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 336.460 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.63 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.64 seconds; current allocated memory: 345.412 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -283,13 +294,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'l_S_i_j_0_i1_l_j1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_i_j_0_i1_l_j1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 336.636 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.46 seconds; current allocated memory: 345.580 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 336.816 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 345.762 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -297,25 +308,25 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'l_S_store_res2_store_res2_l_0_l_store_res2_l_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_store_res2_store_res2_l_0_l_store_res2_l_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 336.996 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 345.941 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 337.240 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 346.169 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'kernel_gemm_relu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 337.692 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 346.616 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.56 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 338.354 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 347.272 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -333,7 +344,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 338.924 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 347.863 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -351,27 +362,26 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 340.425 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 349.372 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 341.586 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 350.552 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j' 
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j' pipeline 'l_S_i_j_k_0_i_l_k_l_j' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 342.826 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 355.885 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1' pipeline 'l_S_i_j_0_i1_l_j1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 344.529 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.37 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.42 seconds; current allocated memory: 367.667 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -380,26 +390,3 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWADDR' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWID' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWLEN' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWSIZE' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWBURST' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWLOCK' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWCACHE' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWPROT' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWQOS' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWREGION' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_AWUSER' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1/m_axi_gmem2_BREADY' to 0.
-INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 345.875 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'kernel_gemm_relu' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/gmem0' to 'm_axi'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/gmem1' to 'm_axi'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/gmem2' to 'm_axi'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/v33' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/v34' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_gemm_relu/v35' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'kernel_gemm_relu' to 's_axilite & ap_ctrl_chain'.
-INFO: [RTGEN 206-100] Bundling port 'v33', 'v34', 'v35' and 'return' to AXI-Lite port control.

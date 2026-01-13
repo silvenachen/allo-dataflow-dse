@@ -1,5 +1,5 @@
 open_project -reset ls_project
-set_top gemm_relu_row_wise
+set_top top
 add_files kernel.cpp -cflags "-Wall"
 add_files -tb testbench.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution -reset solution1 -flow_target vitis

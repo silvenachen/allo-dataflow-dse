@@ -61,10 +61,10 @@ newFuncRoot:1 %i1 = alloca i32 1
 
 <Node id="5" bw="13" op_0_bw="32">
 <![CDATA[
-newFuncRoot:2 %indvar_flatten50 = alloca i32 1
+newFuncRoot:2 %indvar_flatten159 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="indvar_flatten50"/></StgValue>
+<StgValue><ssdm name="indvar_flatten159"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -76,7 +76,7 @@ newFuncRoot:2 %indvar_flatten50 = alloca i32 1
 
 <Node id="6" bw="0" op_0_bw="13" op_1_bw="13">
 <![CDATA[
-newFuncRoot:3 %store_ln0 = store i13 0, i13 %indvar_flatten50
+newFuncRoot:3 %store_ln0 = store i13 0, i13 %indvar_flatten159
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -136,10 +136,10 @@ newFuncRoot:6 %br_ln0 = br void %gemm_stage.exit.preheader
 
 <Node id="11" bw="13" op_0_bw="13" op_1_bw="0">
 <![CDATA[
-gemm_stage.exit.preheader:0 %indvar_flatten50_load = load i13 %indvar_flatten50
+gemm_stage.exit.preheader:0 %indvar_flatten159_load = load i13 %indvar_flatten159
 
 ]]></Node>
-<StgValue><ssdm name="indvar_flatten50_load"/></StgValue>
+<StgValue><ssdm name="indvar_flatten159_load"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -151,7 +151,7 @@ gemm_stage.exit.preheader:0 %indvar_flatten50_load = load i13 %indvar_flatten50
 
 <Node id="12" bw="1" op_0_bw="13" op_1_bw="13">
 <![CDATA[
-gemm_stage.exit.preheader:1 %icmp_ln44 = icmp_eq  i13 %indvar_flatten50_load, i13 4096
+gemm_stage.exit.preheader:1 %icmp_ln44 = icmp_eq  i13 %indvar_flatten159_load, i13 4096
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln44"/></StgValue>
@@ -166,7 +166,7 @@ gemm_stage.exit.preheader:1 %icmp_ln44 = icmp_eq  i13 %indvar_flatten50_load, i1
 
 <Node id="13" bw="13" op_0_bw="13" op_1_bw="13">
 <![CDATA[
-gemm_stage.exit.preheader:2 %add_ln44_1 = add i13 %indvar_flatten50_load, i13 1
+gemm_stage.exit.preheader:2 %add_ln44_1 = add i13 %indvar_flatten159_load, i13 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln44_1"/></StgValue>
@@ -309,10 +309,10 @@ gemm_stage.exit:8 %trunc_ln47 = trunc i7 %select_ln44_1
 
 <Node id="25" bw="12" op_0_bw="12" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-gemm_stage.exit:9 %tmp_9_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i6.i6, i6 %trunc_ln47, i6 0
+gemm_stage.exit:9 %tmp_133_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i6.i6, i6 %trunc_ln47, i6 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_9_cast"/></StgValue>
+<StgValue><ssdm name="tmp_133_cast"/></StgValue>
 </operation>
 
 <operation id="25" st_id="1" stage="1" lat="1">
@@ -341,7 +341,7 @@ gemm_stage.exit:10 %zext_ln47 = zext i7 %select_ln44
 
 <Node id="27" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-gemm_stage.exit:11 %add_ln47 = add i12 %tmp_9_cast, i12 %zext_ln47
+gemm_stage.exit:11 %add_ln47 = add i12 %tmp_133_cast, i12 %zext_ln47
 
 ]]></Node>
 <StgValue><ssdm name="add_ln47"/></StgValue>
@@ -373,10 +373,10 @@ gemm_stage.exit:12 %zext_ln47_1 = zext i12 %add_ln47
 
 <Node id="29" bw="12" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-gemm_stage.exit:13 %C_addr = getelementptr i32 %C, i64 0, i64 %zext_ln47_1
+gemm_stage.exit:13 %C_addr_1 = getelementptr i32 %C, i64 0, i64 %zext_ln47_1
 
 ]]></Node>
-<StgValue><ssdm name="C_addr"/></StgValue>
+<StgValue><ssdm name="C_addr_1"/></StgValue>
 </operation>
 
 <operation id="29" st_id="1" stage="2" lat="2">
@@ -389,7 +389,7 @@ gemm_stage.exit:13 %C_addr = getelementptr i32 %C, i64 0, i64 %zext_ln47_1
 
 <Node id="33" bw="32" op_0_bw="12">
 <![CDATA[
-gemm_stage.exit:17 %v15 = load i12 %C_addr
+gemm_stage.exit:17 %v15 = load i12 %C_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="v15"/></StgValue>
@@ -421,7 +421,7 @@ gemm_stage.exit:28 %add_ln45 = add i7 %select_ln44, i7 1
 
 <Node id="45" bw="0" op_0_bw="13" op_1_bw="13" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-gemm_stage.exit:29 %store_ln44 = store i13 %add_ln44_1, i13 %indvar_flatten50
+gemm_stage.exit:29 %store_ln44 = store i13 %add_ln44_1, i13 %indvar_flatten159
 
 ]]></Node>
 <StgValue><ssdm name="store_ln44"/></StgValue>
@@ -471,7 +471,7 @@ gemm_stage.exit:31 %store_ln45 = store i7 %add_ln45, i7 %j1
 
 <Node id="33" bw="32" op_0_bw="12">
 <![CDATA[
-gemm_stage.exit:17 %v15 = load i12 %C_addr
+gemm_stage.exit:17 %v15 = load i12 %C_addr_1
 
 ]]></Node>
 <StgValue><ssdm name="v15"/></StgValue>
@@ -565,7 +565,7 @@ gemm_stage.exit:14 %Y_addr = getelementptr i32 %Y, i64 0, i64 %zext_ln47_1
 
 <Node id="31" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-gemm_stage.exit:15 %specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5
+gemm_stage.exit:15 %specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln45"/></StgValue>

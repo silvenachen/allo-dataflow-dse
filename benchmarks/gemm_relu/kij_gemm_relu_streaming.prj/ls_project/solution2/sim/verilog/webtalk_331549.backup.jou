@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jan 13 14:17:27 2026
+# Process ID: 331549
+# Current directory: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/kij_gemm_relu_streaming.prj/ls_project/solution2/sim/verilog
+# Command line: wbtcv -mode batch -source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/kij_gemm_relu_streaming.prj/ls_project/solution2/sim/verilog/xsim.dir/gemm_relu_stream_kij/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/kij_gemm_relu_streaming.prj/ls_project/solution2/sim/verilog/webtalk.log
+# Journal file: /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/kij_gemm_relu_streaming.prj/ls_project/solution2/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/gemm_relu/kij_gemm_relu_streaming.prj/ls_project/solution2/sim/verilog/xsim.dir/gemm_relu_stream_kij/webtalk/xsim_webtalk.tcl -notrace

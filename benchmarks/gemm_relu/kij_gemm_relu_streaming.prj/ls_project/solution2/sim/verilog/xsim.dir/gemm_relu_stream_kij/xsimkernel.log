@@ -1,0 +1,7 @@
+Running: xsim.dir/gemm_relu_stream_kij/xsimk -simmode gui -wdb gemm_relu_stream_kij.wdb -simrunnum 0 -socket 39263
+Design successfully loaded
+Design Loading Memory Usage: 42736 KB (Peak: 42744 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 145168 KB (Peak: 182004 KB)
+Simulation CPU Usage: 37620 ms

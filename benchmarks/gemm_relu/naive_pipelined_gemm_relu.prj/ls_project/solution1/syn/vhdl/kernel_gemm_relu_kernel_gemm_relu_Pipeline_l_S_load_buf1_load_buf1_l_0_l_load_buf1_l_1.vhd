@@ -274,7 +274,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_boolean_0 = ap_block_pp0_stage0_11001)) then
-                if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
+                if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
                     load_buf1_l_0_fu_78 <= ap_const_lv7_0;
                 elsif ((ap_enable_reg_pp0_iter2 = ap_const_logic_1)) then 
                     load_buf1_l_0_fu_78 <= select_ln72_2_fu_226_p3;
@@ -300,7 +300,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_boolean_0 = ap_block_pp0_stage0_11001)) then
-                if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
+                if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
                     shiftreg90_fu_70 <= ap_const_lv480_lc_1;
                 elsif ((ap_enable_reg_pp0_iter2 = ap_const_logic_1)) then 
                     shiftreg90_fu_70 <= ap_phi_mux_empty_phi_fu_113_p4(511 downto 32);
@@ -464,7 +464,7 @@ begin
 
     ap_sig_allocacmp_indvar_flatten7_load_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, ap_loop_init, indvar_flatten7_fu_82)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0))) then 
+        if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0))) then 
             ap_sig_allocacmp_indvar_flatten7_load <= ap_const_lv13_0;
         else 
             ap_sig_allocacmp_indvar_flatten7_load <= indvar_flatten7_fu_82;
@@ -474,7 +474,7 @@ begin
 
     ap_sig_allocacmp_load_buf1_l_1_load_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, ap_loop_init, load_buf1_l_1_fu_74)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0))) then 
+        if (((ap_loop_init = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0))) then 
             ap_sig_allocacmp_load_buf1_l_1_load <= ap_const_lv7_0;
         else 
             ap_sig_allocacmp_load_buf1_l_1_load <= load_buf1_l_1_fu_74;

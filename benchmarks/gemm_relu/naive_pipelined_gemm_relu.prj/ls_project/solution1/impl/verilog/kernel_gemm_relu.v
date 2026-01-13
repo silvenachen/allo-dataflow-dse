@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="kernel_gemm_relu_kernel_gemm_relu,hls_ip_2021_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu11p-flga2577-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.300000,HLS_SYN_LAT=274594,HLS_SYN_TPT=none,HLS_SYN_MEM=206,HLS_SYN_DSP=0,HLS_SYN_FF=8612,HLS_SYN_LUT=10247,HLS_VERSION=2021_1}" *)
+(* CORE_GENERATION_INFO="kernel_gemm_relu_kernel_gemm_relu,hls_ip_2021_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu11p-flga2577-1-e,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.724714,HLS_SYN_LAT=299165,HLS_SYN_TPT=none,HLS_SYN_MEM=206,HLS_SYN_DSP=0,HLS_SYN_FF=11000,HLS_SYN_LUT=13357,HLS_VERSION=2021_1}" *)
 
 module kernel_gemm_relu (
         ap_clk,
@@ -553,6 +553,7 @@ reg    C_we0;
 reg   [31:0] C_d0;
 wire   [31:0] C_q0;
 reg    C_ce1;
+reg    C_we1;
 wire   [31:0] C_q1;
 reg   [11:0] Y_address0;
 reg    Y_ce0;
@@ -646,20 +647,22 @@ wire   [11:0] grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu
 wire    grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_ce0;
 wire    grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_we0;
 wire   [31:0] grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_d0;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_done;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_idle;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_ready;
-wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf0_address0;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf0_ce0;
-wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf1_address0;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf1_ce0;
-wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_address0;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_ce0;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_we0;
-wire   [31:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_d0;
-wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_address1;
-wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_ce1;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_done;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_idle;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_ready;
+wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_address0;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_ce0;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_we0;
+wire   [31:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_d0;
+wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_address1;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_ce1;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_we1;
+wire   [31:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_d1;
+wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf0_address0;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf0_ce0;
+wire   [11:0] grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf1_address0;
+wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf1_ce0;
 wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_start;
 wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_done;
 wire    grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_idle;
@@ -792,9 +795,8 @@ wire    ap_CS_fsm_state72;
 wire    ap_CS_fsm_state73;
 reg    grp_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_150_ap_start_reg;
 reg    grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_ap_start_reg;
-reg    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start_reg;
-reg   [146:0] ap_NS_fsm;
-wire    ap_NS_fsm_state74;
+reg    grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start_reg;
+wire    ap_CS_fsm_state74;
 wire    ap_CS_fsm_state75;
 reg    grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_start_reg;
 wire    ap_CS_fsm_state76;
@@ -806,6 +808,7 @@ wire  signed [63:0] sext_ln72_fu_224_p1;
 wire  signed [63:0] sext_ln85_fu_234_p1;
 reg    ap_block_state2_io;
 reg    ap_block_state1;
+reg   [146:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 reg    ap_ST_fsm_state2_blk;
 wire    ap_ST_fsm_state3_blk;
@@ -966,7 +969,7 @@ initial begin
 #0 grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_142_ap_start_reg = 1'b0;
 #0 grp_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_150_ap_start_reg = 1'b0;
 #0 grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_ap_start_reg = 1'b0;
-#0 grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start_reg = 1'b0;
+#0 grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start_reg = 1'b0;
 #0 grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_start_reg = 1'b0;
 #0 grp_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_176_ap_start_reg = 1'b0;
 end
@@ -985,7 +988,7 @@ buf0_U(
     .q0(buf0_q0)
 );
 
-kernel_gemm_relu_buf0 #(
+kernel_gemm_relu_buf1 #(
     .DataWidth( 32 ),
     .AddressRange( 4096 ),
     .AddressWidth( 12 ))
@@ -1011,8 +1014,10 @@ C_U(
     .we0(C_we0),
     .d0(C_d0),
     .q0(C_q0),
-    .address1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_address1),
+    .address1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_address1),
     .ce1(C_ce1),
+    .we1(C_we1),
+    .d1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_d1),
     .q1(C_q1)
 );
 
@@ -1161,26 +1166,29 @@ kernel_gemm_relu_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2 grp
     .C_d0(grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_d0)
 );
 
-kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163(
+kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start),
-    .ap_done(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_done),
-    .ap_idle(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_idle),
-    .ap_ready(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_ready),
-    .buf0_address0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf0_address0),
-    .buf0_ce0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf0_ce0),
+    .ap_start(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start),
+    .ap_done(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_done),
+    .ap_idle(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_idle),
+    .ap_ready(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_ready),
+    .C_address0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_address0),
+    .C_ce0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_ce0),
+    .C_we0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_we0),
+    .C_d0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_d0),
+    .C_q0(C_q0),
+    .C_address1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_address1),
+    .C_ce1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_ce1),
+    .C_we1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_we1),
+    .C_d1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_d1),
+    .C_q1(C_q1),
+    .buf0_address0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf0_address0),
+    .buf0_ce0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf0_ce0),
     .buf0_q0(buf0_q0),
-    .buf1_address0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf1_address0),
-    .buf1_ce0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf1_ce0),
-    .buf1_q0(buf1_q0),
-    .C_address0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_address0),
-    .C_ce0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_ce0),
-    .C_we0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_we0),
-    .C_d0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_d0),
-    .C_address1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_address1),
-    .C_ce1(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_ce1),
-    .C_q1(C_q1)
+    .buf1_address0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf1_address0),
+    .buf1_ce0(grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf1_ce0),
+    .buf1_q0(buf1_q0)
 );
 
 kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1 grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170(
@@ -1686,12 +1694,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start_reg <= 1'b0;
+        grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_NS_fsm_state74) & (1'b1 == ap_CS_fsm_state73))) begin
-            grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start_reg <= 1'b1;
-        end else if ((grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_ready == 1'b1)) begin
-            grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state74)) begin
+            grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start_reg <= 1'b1;
+        end else if ((grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_ready == 1'b1)) begin
+            grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -1756,7 +1764,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state77)) begin
         C_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_C_address0;
     end else if ((1'b1 == ap_CS_fsm_state75)) begin
-        C_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_address0;
+        C_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_address0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         C_address0 = grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_address0;
     end else begin
@@ -1768,7 +1776,7 @@ always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state77)) begin
         C_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_C_ce0;
     end else if ((1'b1 == ap_CS_fsm_state75)) begin
-        C_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_ce0;
+        C_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_ce0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         C_ce0 = grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_ce0;
     end else begin
@@ -1778,7 +1786,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        C_ce1 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_ce1;
+        C_ce1 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_ce1;
     end else begin
         C_ce1 = 1'b0;
     end
@@ -1786,7 +1794,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        C_d0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_d0;
+        C_d0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_d0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         C_d0 = grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_d0;
     end else begin
@@ -1796,11 +1804,19 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        C_we0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_C_we0;
+        C_we0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_we0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         C_we0 = grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_C_we0;
     end else begin
         C_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state75)) begin
+        C_we1 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_C_we1;
+    end else begin
+        C_we1 = 1'b0;
     end
 end
 
@@ -2095,7 +2111,7 @@ end
 assign ap_ST_fsm_state74_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_done == 1'b0)) begin
+    if ((grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_done == 1'b0)) begin
         ap_ST_fsm_state75_blk = 1'b1;
     end else begin
         ap_ST_fsm_state75_blk = 1'b0;
@@ -2194,7 +2210,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        buf0_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf0_address0;
+        buf0_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf0_address0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         buf0_address0 = grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_142_buf0_address0;
     end else begin
@@ -2204,7 +2220,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        buf0_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf0_ce0;
+        buf0_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         buf0_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_142_buf0_ce0;
     end else begin
@@ -2222,7 +2238,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        buf1_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf1_address0;
+        buf1_address0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf1_address0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         buf1_address0 = grp_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_150_buf1_address0;
     end else begin
@@ -2232,7 +2248,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state75)) begin
-        buf1_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_buf1_ce0;
+        buf1_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_buf1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state73)) begin
         buf1_ce0 = grp_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_150_buf1_ce0;
     end else begin
@@ -2857,7 +2873,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state75;
         end
         ap_ST_fsm_state75 : begin
-            if (((grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state75))) begin
+            if (((grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state75))) begin
                 ap_NS_fsm = ap_ST_fsm_state76;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state75;
@@ -3107,6 +3123,8 @@ assign ap_CS_fsm_state72 = ap_CS_fsm[32'd71];
 
 assign ap_CS_fsm_state73 = ap_CS_fsm[32'd72];
 
+assign ap_CS_fsm_state74 = ap_CS_fsm[32'd73];
+
 assign ap_CS_fsm_state75 = ap_CS_fsm[32'd74];
 
 assign ap_CS_fsm_state76 = ap_CS_fsm[32'd75];
@@ -3116,8 +3134,6 @@ assign ap_CS_fsm_state77 = ap_CS_fsm[32'd76];
 assign ap_CS_fsm_state78 = ap_CS_fsm[32'd77];
 
 assign ap_CS_fsm_state79 = ap_CS_fsm[32'd78];
-
-assign ap_NS_fsm_state74 = ap_NS_fsm[32'd73];
 
 always @ (*) begin
     ap_block_state1 = ((ap_done_reg == 1'b1) | (ap_start == 1'b0));
@@ -3135,7 +3151,7 @@ assign grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158_ap
 
 assign grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_start = grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170_ap_start_reg;
 
-assign grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163_ap_start_reg;
+assign grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start = grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163_ap_start_reg;
 
 assign grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_142_ap_start = grp_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_142_ap_start_reg;
 

@@ -15,26 +15,26 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+            <EstimatedClockPeriod>7.725</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>274594</Best-caseLatency>
-            <Average-caseLatency>274594</Average-caseLatency>
-            <Worst-caseLatency>274594</Worst-caseLatency>
-            <Best-caseRealTimeLatency>2.746 ms</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>2.746 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>2.746 ms</Worst-caseRealTimeLatency>
-            <Interval-min>274595</Interval-min>
-            <Interval-max>274595</Interval-max>
+            <Best-caseLatency>299165</Best-caseLatency>
+            <Average-caseLatency>299165</Average-caseLatency>
+            <Worst-caseLatency>299165</Worst-caseLatency>
+            <Best-caseRealTimeLatency>2.992 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>2.992 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.992 ms</Worst-caseRealTimeLatency>
+            <Interval-min>299166</Interval-min>
+            <Interval-max>299166</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>206</BRAM_18K>
             <DSP>5</DSP>
-            <FF>8612</FF>
-            <LUT>10247</LUT>
+            <FF>11000</FF>
+            <LUT>13357</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -1913,11 +1913,11 @@
                     <BindInstances>add_ln107_1_fu_92_p2 add_ln107_fu_104_p2 add_ln109_fu_148_p2 add_ln108_fu_159_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163</InstName>
-                    <ModuleName>kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j</ModuleName>
+                    <InstName>grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163</InstName>
+                    <ModuleName>kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>163</ID>
-                    <BindInstances>empty_33_fu_175_p2 add_ln25_1_fu_187_p2 add_ln25_fu_199_p2 add_ln26_fu_277_p2 empty_37_fu_301_p2 add_ln30_fu_364_p2 add_ln32_fu_375_p2 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 add_ln27_fu_381_p2 add_ln26_1_fu_387_p2</BindInstances>
+                    <BindInstances>add_ln25_1_fu_1473_p2 add_ln25_fu_1485_p2 empty_34_fu_1557_p2 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 fmul_32ns_32ns_32_2_max_dsp_1_U9 fadd_32ns_32ns_32_3_full_dsp_1_U8 add_ln26_fu_1581_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1_fu_170</InstName>
@@ -2116,36 +2116,36 @@
             </BindNodes>
         </Module>
         <Module>
-            <Name>kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j</Name>
+            <Name>kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k</Name>
             <Loops>
-                <l_S_i_j_k_0_i_l_k_l_j/>
+                <l_S_i_j_k_0_i_l_k/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>7.297</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>7.725</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>262151</Best-caseLatency>
-                    <Average-caseLatency>262151</Average-caseLatency>
-                    <Worst-caseLatency>262151</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>2.622 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>2.622 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>2.622 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>262151</PipelineInitiationInterval>
+                    <Best-caseLatency>286722</Best-caseLatency>
+                    <Average-caseLatency>286722</Average-caseLatency>
+                    <Worst-caseLatency>286722</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.867 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.867 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.867 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>286722</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <l_S_i_j_k_0_i_l_k_l_j>
-                        <Name>l_S_i_j_k_0_i_l_k_l_j</Name>
-                        <TripCount>262144</TripCount>
-                        <Latency>262149</Latency>
-                        <AbsoluteTimeLatency>2.621 ms</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>7</PipelineDepth>
+                    <l_S_i_j_k_0_i_l_k>
+                        <Name>l_S_i_j_k_0_i_l_k</Name>
+                        <TripCount>4096</TripCount>
+                        <Latency>286720</Latency>
+                        <AbsoluteTimeLatency>2.867 ms</AbsoluteTimeLatency>
+                        <PipelineII>70</PipelineII>
+                        <PipelineDepth>70</PipelineDepth>
                         <PipelineType>yes</PipelineType>
-                    </l_S_i_j_k_0_i_l_k_l_j>
+                    </l_S_i_j_k_0_i_l_k>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -2153,10 +2153,10 @@
                     <DSP>5</DSP>
                     <AVAIL_DSP>9216</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>557</FF>
+                    <FF>2945</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>698</LUT>
+                    <LUT>3799</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -2168,17 +2168,138 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="empty_33_fu_175_p2" SOURCE="kernel.cpp:25" URAM="0" VARIABLE="empty_33"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_1_fu_187_p2" SOURCE="kernel.cpp:25" URAM="0" VARIABLE="add_ln25_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_199_p2" SOURCE="kernel.cpp:25" URAM="0" VARIABLE="add_ln25"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_277_p2" SOURCE="kernel.cpp:26" URAM="0" VARIABLE="add_ln26"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="empty_37_fu_301_p2" SOURCE="kernel.cpp:26" URAM="0" VARIABLE="empty_37"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln30_fu_364_p2" SOURCE="kernel.cpp:30" URAM="0" VARIABLE="add_ln30"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_375_p2" SOURCE="kernel.cpp:32" URAM="0" VARIABLE="add_ln32"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln27_fu_381_p2" SOURCE="kernel.cpp:27" URAM="0" VARIABLE="add_ln27"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k_l_j" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_1_fu_387_p2" SOURCE="kernel.cpp:26" URAM="0" VARIABLE="add_ln26_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_1_fu_1473_p2" SOURCE="kernel.cpp:25" URAM="0" VARIABLE="add_ln25_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_1485_p2" SOURCE="kernel.cpp:25" URAM="0" VARIABLE="add_ln25"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="add" PRAGMA="" RTLNAME="empty_34_fu_1557_p2" SOURCE="kernel.cpp:32" URAM="0" VARIABLE="empty_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_s"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_s"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_27"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_27"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_31"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_31"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_32"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_32"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_33"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_33"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_37"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_37"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_39"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_39"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_45"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_45"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_47"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_47"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_48"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_48"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_49"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_49"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_50"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_50"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_51"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_51"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_53"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_53"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_54"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_54"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_55"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_55"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_56"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_56"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_57"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_57"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_61"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_61"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U9" SOURCE="kernel.cpp:31" URAM="0" VARIABLE="v8_62"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U8" SOURCE="kernel.cpp:33" URAM="0" VARIABLE="v10_62"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_i_j_k_0_i_l_k" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_1581_p2" SOURCE="kernel.cpp:26" URAM="0" VARIABLE="add_ln26"/>
             </BindNodes>
         </Module>
         <Module>
@@ -2305,16 +2426,16 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>7.725</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>274594</Best-caseLatency>
-                    <Average-caseLatency>274594</Average-caseLatency>
-                    <Worst-caseLatency>274594</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>2.746 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>2.746 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>2.746 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>274595</PipelineInitiationInterval>
+                    <Best-caseLatency>299165</Best-caseLatency>
+                    <Average-caseLatency>299165</Average-caseLatency>
+                    <Worst-caseLatency>299165</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.992 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.992 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.992 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>299166</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
@@ -2326,12 +2447,12 @@
                     <DSP>5</DSP>
                     <AVAIL_DSP>9216</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>8612</FF>
+                    <FF>11000</FF>
                     <AVAIL_FF>2592000</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>10247</LUT>
+                    <LUT>13357</LUT>
                     <AVAIL_LUT>1296000</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>960</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
@@ -2339,8 +2460,8 @@
             </AreaEstimates>
             <BindNodes>
                 <BindNode BINDTYPE="storage" BRAM="8" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf0_U" SOURCE="kernel.cpp:102" URAM="0" VARIABLE="buf0"/>
-                <BindNode BINDTYPE="storage" BRAM="8" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf1_U" SOURCE="kernel.cpp:104" URAM="0" VARIABLE="buf1"/>
-                <BindNode BINDTYPE="storage" BRAM="8" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="C_U" SOURCE="kernel.cpp:106" URAM="0" VARIABLE="C"/>
+                <BindNode BINDTYPE="storage" BRAM="8" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="buf1_U" SOURCE="kernel.cpp:104" URAM="0" VARIABLE="buf1"/>
+                <BindNode BINDTYPE="storage" BRAM="8" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="C_U" SOURCE="kernel.cpp:106" URAM="0" VARIABLE="C"/>
                 <BindNode BINDTYPE="storage" BRAM="8" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="Y_U" SOURCE="kernel.cpp:112" URAM="0" VARIABLE="Y"/>
             </BindNodes>
         </Module>

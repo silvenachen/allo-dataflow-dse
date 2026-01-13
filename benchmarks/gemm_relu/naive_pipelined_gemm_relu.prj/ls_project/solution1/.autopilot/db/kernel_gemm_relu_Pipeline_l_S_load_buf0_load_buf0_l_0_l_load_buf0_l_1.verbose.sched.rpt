@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'
 ================================================================
-* Date:           Fri Jan  9 17:50:33 2026
+* Date:           Tue Jan 13 10:58:41 2026
 
 * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
 * Project:        ls_project
@@ -92,7 +92,7 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%load_buf0_l_0 = alloca i32 1"   ---
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 9 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln59_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %sext_ln59"   --->   Operation 10 'read' 'sext_ln59_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln59_cast = sext i58 %sext_ln59_read"   --->   Operation 11 'sext' 'sext_ln59_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem0, void @empty_0, i32 0, i32 0, void @empty_5, i32 64, i32 4096, void @empty, void @empty_6, void @empty_5, i32 16, i32 16, i32 16, i32 16, void @empty_5, void @empty_5"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem0, void @empty_0, i32 0, i32 0, void @empty_19, i32 64, i32 4096, void @empty, void @empty_6, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.46ns)   --->   "%store_ln0 = store i13 0, i13 %indvar_flatten"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
 ST_1 : Operation 14 [1/1] (0.46ns)   --->   "%store_ln0 = store i7 0, i7 %load_buf0_l_0"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
 ST_1 : Operation 15 [1/1] (0.46ns)   --->   "%store_ln0 = store i7 0, i7 %load_buf0_l_1"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
@@ -131,7 +131,7 @@ ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i7 %select_ln59" 
 ST_3 : Operation 43 [1/1] (0.99ns)   --->   "%add_ln63 = add i12 %tmp_2_cast, i12 %zext_ln63" [kernel.cpp:63]   --->   Operation 43 'add' 'add_ln63' <Predicate = (!icmp_ln59)> <Delay = 0.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln63_1 = zext i12 %add_ln63" [kernel.cpp:63]   --->   Operation 44 'zext' 'zext_ln63_1' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%buf0_addr = getelementptr i32 %buf0, i64 0, i64 %zext_ln63_1" [kernel.cpp:63]   --->   Operation 45 'getelementptr' 'buf0_addr' <Predicate = (!icmp_ln59)> <Delay = 0.00>
-ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln60 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5" [kernel.cpp:60]   --->   Operation 46 'specpipeline' 'specpipeline_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln60 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_19" [kernel.cpp:60]   --->   Operation 46 'specpipeline' 'specpipeline_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln60 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [kernel.cpp:60]   --->   Operation 47 'specloopname' 'specloopname_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_3 : Operation 48 [1/1] (0.46ns)   --->   "%br_ln62 = br i1 %icmp_ln62, void %.split24._crit_edge, void" [kernel.cpp:62]   --->   Operation 48 'br' 'br_ln62' <Predicate = (!icmp_ln59)> <Delay = 0.46>
 ST_3 : Operation 49 [1/1] (0.46ns)   --->   "%br_ln62 = br void %.split24._crit_edge" [kernel.cpp:62]   --->   Operation 49 'br' 'br_ln62' <Predicate = (!icmp_ln59 & icmp_ln62)> <Delay = 0.46>

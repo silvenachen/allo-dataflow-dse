@@ -14,7 +14,7 @@ set C_modelType { void 0 }
 set C_modelArgList {
 	{ gmem1 int 512 regular {axi_master 0}  }
 	{ sext_ln72 int 58 regular  }
-	{ buf1 float 32 regular {array 4096 { 0 3 } 0 1 }  }
+	{ buf1 float 32 regular {array 4096 { 0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "gmem1", "interface" : "axi_master", "bitwidth" : 512, "direction" : "READONLY", "bitSlice":[ {"cElement": [{"cName": "v34","offset": { "type": "dynamic","port_name": "v34","bundle": "control"},"direction": "READONLY"}]}]} , 

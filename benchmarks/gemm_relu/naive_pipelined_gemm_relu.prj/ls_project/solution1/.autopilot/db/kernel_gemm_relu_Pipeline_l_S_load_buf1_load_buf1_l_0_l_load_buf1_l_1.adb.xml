@@ -121,7 +121,7 @@ newFuncRoot:5 %sext_ln72_cast = sext i58 %sext_ln72_read
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem1, void @empty_0, i32 0, i32 0, void @empty_5, i32 64, i32 4096, void @empty_13, void @empty_6, void @empty_5, i32 16, i32 16, i32 16, i32 16, void @empty_5, void @empty_5
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem1, void @empty_0, i32 0, i32 0, void @empty_19, i32 64, i32 4096, void @empty_13, void @empty_6, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -680,7 +680,7 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-.split22:18 %specpipeline_ln73 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5
+.split22:18 %specpipeline_ln73 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln73"/></StgValue>
@@ -796,7 +796,7 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 </operation>
 
 <operation id="54" st_id="3" stage="1" lat="1">
-<core>RAM</core>
+<core>RAM_1WnR</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -866,7 +866,7 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 <core>NULL</core><StgValue><ssdm name="sext_ln72"/></StgValue>
 </port>
 <port id="76" name="buf1" dir="1" iftype="1">
-<core>RAM</core><StgValue><ssdm name="buf1"/><MemPortTyVec>0 3 </MemPortTyVec>
+<core>RAM_1WnR</core><StgValue><ssdm name="buf1"/><MemPortTyVec>0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -897,7 +897,7 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="93" from="StgValue_91" to="specinterface_ln0" fromId="91" toId="12">
 </dataflow>
-<dataflow id="95" from="empty_5" to="specinterface_ln0" fromId="94" toId="12">
+<dataflow id="95" from="empty_19" to="specinterface_ln0" fromId="94" toId="12">
 </dataflow>
 <dataflow id="97" from="StgValue_96" to="specinterface_ln0" fromId="96" toId="12">
 </dataflow>
@@ -907,7 +907,7 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="103" from="empty_6" to="specinterface_ln0" fromId="102" toId="12">
 </dataflow>
-<dataflow id="104" from="empty_5" to="specinterface_ln0" fromId="94" toId="12">
+<dataflow id="104" from="empty_19" to="specinterface_ln0" fromId="94" toId="12">
 </dataflow>
 <dataflow id="106" from="StgValue_105" to="specinterface_ln0" fromId="105" toId="12">
 </dataflow>
@@ -917,9 +917,9 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="109" from="StgValue_105" to="specinterface_ln0" fromId="105" toId="12">
 </dataflow>
-<dataflow id="110" from="empty_5" to="specinterface_ln0" fromId="94" toId="12">
+<dataflow id="110" from="empty_19" to="specinterface_ln0" fromId="94" toId="12">
 </dataflow>
-<dataflow id="111" from="empty_5" to="specinterface_ln0" fromId="94" toId="12">
+<dataflow id="111" from="empty_19" to="specinterface_ln0" fromId="94" toId="12">
 </dataflow>
 <dataflow id="113" from="StgValue_112" to="store_ln0" fromId="112" toId="13">
 </dataflow>
@@ -1053,7 +1053,7 @@ load_buf1.exit.preheader.preheader.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="194" from="StgValue_91" to="specpipeline_ln73" fromId="91" toId="46">
 </dataflow>
-<dataflow id="195" from="empty_5" to="specpipeline_ln73" fromId="94" toId="46">
+<dataflow id="195" from="empty_19" to="specpipeline_ln73" fromId="94" toId="46">
 </dataflow>
 <dataflow id="196" from="_ssdm_op_SpecLoopName" to="specloopname_ln73" fromId="158" toId="47">
 </dataflow>

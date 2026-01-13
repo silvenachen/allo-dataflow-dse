@@ -1,0 +1,49 @@
+[     0-286895] gemm_relu_stream_kij
+        [     0-     0] entry_proc
+        [     0-  4172] load_buf0.1
+                [    71-  4172] load_buf0.1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
+        [     0-  4172] load_buf1.1
+                [    71-  4172] load_buf1.1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
+        [  4173-278615] gemm_stage_0.1
+                [  4174-  8270] gemm_stage_0.1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_26_2
+                [  8272-270422] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i_l_S_j_0_j
+                [270424-278615] gemm_stage_0.1_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4
+        [  4174-282715] relu_stage_0.1
+                [  4175-278616] relu_stage_0.1_Pipeline_VITIS_LOOP_56_1_VITIS_LOOP_57_2
+                [278618-282715] relu_stage_0.1_Pipeline_l_S_j_0_j1_l_S_i_0_i1
+        [282716-286895] store_res2.1
+                [282718-286815] store_res2.1_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
+(LS) [sli3079@chao-srv1 ls_project]$ ls ../..
+element_wise_fifo4.prj       jki_pipelined_gemm_relu.prj  naive_gemm_relu.py             stream_ele_gemm_relu_oldapi.py  stream_kij_gemm_relu.py
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+------------+-------------+-----+
+    |                                       Modules                                      |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |          |         |            |             |     |
+    |                                       & Loops                                      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|   BRAM   |   DSP   |     FF     |     LUT     | URAM|
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+------------+-------------+-----+
+    |+ gemm_relu_stream_kij*                                                             |  Timing|  -0.00|   274523|  2.745e+06|         -|   270353|       -|  dataflow|  235 (5%)|  5 (~0%)|  9024 (~0%)|  11071 (~0%)|    -|
+    | + grp_load_buf0_1_fu_120                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|       -|        no|         -|        -|  1176 (~0%)|   1172 (~0%)|    -|
+    |  + grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|  1044 (~0%)|    689 (~0%)|    -|
+    |   o l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_load_buf1_1_fu_128                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|       -|        no|         -|        -|  1176 (~0%)|   1172 (~0%)|    -|
+    |  + grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|  1044 (~0%)|    689 (~0%)|    -|
+    |   o l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_gemm_stage_0_1_fu_136                                                        |       -|   0.00|   270352|  2.704e+06|         -|   270352|       -|        no|   8 (~0%)|  5 (~0%)|   627 (~0%)|   1197 (~0%)|    -|
+    |  + grp_gemm_stage_0_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_26_2_fu_28               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|         -|        -|    29 (~0%)|    167 (~0%)|    -|
+    |   o VITIS_LOOP_25_1_VITIS_LOOP_26_2                                                |       -|   7.30|     4096|  4.096e+04|         1|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    |  + grp_gemm_stage_0_1_Pipeline_l_S_k_0_k_l_S_i_0_i_l_S_j_0_j_fu_34                 |       -|   0.00|   262151|  2.622e+06|         -|   262151|       -|        no|         -|  5 (~0%)|   557 (~0%)|    698 (~0%)|    -|
+    |   o l_S_k_0_k_l_S_i_0_i_l_S_j_0_j                                                  |       -|   7.30|   262149|  2.621e+06|         7|        1|  262144|       yes|         -|        -|           -|            -|    -|
+    |  + grp_gemm_stage_0_1_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4_fu_43               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|         -|        -|    30 (~0%)|    189 (~0%)|    -|
+    |   o VITIS_LOOP_43_3_VITIS_LOOP_44_4                                                |       -|   7.30|     4096|  4.096e+04|         2|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_relu_stage_0_1_fu_143                                                        |       -|   3.77|     8200|  8.200e+04|         -|     8200|       -|        no|   8 (~0%)|        -|   125 (~0%)|    495 (~0%)|    -|
+    |  + grp_relu_stage_0_1_Pipeline_VITIS_LOOP_56_1_VITIS_LOOP_57_2_fu_24               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|         -|        -|    30 (~0%)|    171 (~0%)|    -|
+    |   o VITIS_LOOP_56_1_VITIS_LOOP_57_2                                                |       -|   7.30|     4096|  4.096e+04|         2|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    |  + grp_relu_stage_0_1_Pipeline_l_S_j_0_j1_l_S_i_0_i1_fu_32                         |       -|   3.77|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|    88 (~0%)|    241 (~0%)|    -|
+    |   o l_S_j_0_j1_l_S_i_0_i1                                                          |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    | + v39_c_channel_entry_proc_fu_149                                                  |       -|   7.30|        0|      0.000|         -|        0|       -|        no|         -|        -|    66 (~0%)|     20 (~0%)|    -|
+    | + grp_store_res2_1_fu_154                                                          |  Timing|  -0.00|     4169|  4.169e+04|         -|     4169|       -|        no|         -|        -|  1159 (~0%)|   1655 (~0%)|    -|
+    |  + grp_store_res2_1_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_54  |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|  1028 (~0%)|   1155 (~0%)|    -|
+    |   o l_S_store_res2_store_res2_l_0_l_store_res2_l_1                                 |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|           -|            -|    -|
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+------------+-------------+-----+

@@ -122,8 +122,8 @@
     "ClockPeriod": "10",
     "Uncertainty": "2.7",
     "IsCombinational": "0",
-    "II": "274595",
-    "Latency": "274594"
+    "II": "299166",
+    "Latency": "299165"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -142,6 +142,7 @@
     "CSource": ["..\/..\/kernel.cpp"],
     "Vhdl": [
       "impl\/vhdl\/kernel_gemm_relu_buf0.vhd",
+      "impl\/vhdl\/kernel_gemm_relu_buf1.vhd",
       "impl\/vhdl\/kernel_gemm_relu_C.vhd",
       "impl\/vhdl\/kernel_gemm_relu_control_s_axi.vhd",
       "impl\/vhdl\/kernel_gemm_relu_fadd_32ns_32ns_32_3_full_dsp_1.vhd",
@@ -152,7 +153,7 @@
       "impl\/vhdl\/kernel_gemm_relu_gmem1_m_axi.vhd",
       "impl\/vhdl\/kernel_gemm_relu_gmem2_m_axi.vhd",
       "impl\/vhdl\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1.vhd",
-      "impl\/vhdl\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.vhd",
+      "impl\/vhdl\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.vhd",
       "impl\/vhdl\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.vhd",
       "impl\/vhdl\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1.vhd",
       "impl\/vhdl\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1.vhd",
@@ -161,6 +162,7 @@
     ],
     "Verilog": [
       "impl\/verilog\/kernel_gemm_relu_buf0.v",
+      "impl\/verilog\/kernel_gemm_relu_buf1.v",
       "impl\/verilog\/kernel_gemm_relu_C.v",
       "impl\/verilog\/kernel_gemm_relu_control_s_axi.v",
       "impl\/verilog\/kernel_gemm_relu_fadd_32ns_32ns_32_3_full_dsp_1.v",
@@ -171,7 +173,7 @@
       "impl\/verilog\/kernel_gemm_relu_gmem1_m_axi.v",
       "impl\/verilog\/kernel_gemm_relu_gmem2_m_axi.v",
       "impl\/verilog\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1.v",
-      "impl\/verilog\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j.v",
+      "impl\/verilog\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k.v",
       "impl\/verilog\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1.v",
       "impl\/verilog\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1.v",
       "impl\/verilog\/kernel_gemm_relu_kernel_gemm_relu_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1.v",
@@ -1494,8 +1496,8 @@
           "InstanceName": "grp_kernel_gemm_relu_Pipeline_VITIS_LOOP_107_1_VITIS_LOOP_108_2_fu_158"
         },
         {
-          "ModuleName": "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j",
-          "InstanceName": "grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_163"
+          "ModuleName": "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k",
+          "InstanceName": "grp_kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_fu_163"
         },
         {
           "ModuleName": "kernel_gemm_relu_Pipeline_l_S_i_j_0_i1_l_j1",
@@ -1529,7 +1531,7 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j": {
+      "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "1",
@@ -1676,35 +1678,35 @@
           "UTIL_URAM": "0"
         }
       },
-      "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k_l_j": {
+      "kernel_gemm_relu_Pipeline_l_S_i_j_k_0_i_l_k": {
         "Latency": {
-          "LatencyBest": "262151",
-          "LatencyAvg": "262151",
-          "LatencyWorst": "262151",
-          "PipelineII": "262151",
+          "LatencyBest": "286722",
+          "LatencyAvg": "286722",
+          "LatencyWorst": "286722",
+          "PipelineII": "286722",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "7.297"
+          "Estimate": "7.725"
         },
         "Loops": [{
-            "Name": "l_S_i_j_k_0_i_l_k_l_j",
-            "TripCount": "262144",
-            "Latency": "262149",
-            "PipelineII": "1",
-            "PipelineDepth": "7"
+            "Name": "l_S_i_j_k_0_i_l_k",
+            "TripCount": "4096",
+            "Latency": "286720",
+            "PipelineII": "70",
+            "PipelineDepth": "70"
           }],
         "Area": {
           "DSP": "5",
           "AVAIL_DSP": "9216",
           "UTIL_DSP": "~0",
-          "FF": "557",
+          "FF": "2945",
           "AVAIL_FF": "2592000",
           "UTIL_FF": "~0",
-          "LUT": "698",
+          "LUT": "3799",
           "AVAIL_LUT": "1296000",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
@@ -1795,17 +1797,17 @@
       },
       "kernel_gemm_relu": {
         "Latency": {
-          "LatencyBest": "274594",
-          "LatencyAvg": "274594",
-          "LatencyWorst": "274594",
-          "PipelineII": "274595",
+          "LatencyBest": "299165",
+          "LatencyAvg": "299165",
+          "LatencyWorst": "299165",
+          "PipelineII": "299166",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "7.300"
+          "Estimate": "7.725"
         },
         "Area": {
           "BRAM_18K": "206",
@@ -1814,12 +1816,12 @@
           "DSP": "5",
           "AVAIL_DSP": "9216",
           "UTIL_DSP": "~0",
-          "FF": "8612",
+          "FF": "11000",
           "AVAIL_FF": "2592000",
           "UTIL_FF": "~0",
-          "LUT": "10247",
+          "LUT": "13357",
           "AVAIL_LUT": "1296000",
-          "UTIL_LUT": "~0",
+          "UTIL_LUT": "1",
           "URAM": "0",
           "AVAIL_URAM": "960",
           "UTIL_URAM": "0"
@@ -1830,7 +1832,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2026-01-09 17:50:37 EST",
+    "Time": "2026-01-13 11:00:59 EST",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.1"
   }

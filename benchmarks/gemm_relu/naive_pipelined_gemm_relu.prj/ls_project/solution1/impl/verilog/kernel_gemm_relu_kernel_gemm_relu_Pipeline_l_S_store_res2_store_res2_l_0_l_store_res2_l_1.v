@@ -165,13 +165,13 @@ wire   [6:0] add_ln86_fu_229_p2;
 reg   [6:0] store_res2_l_0_fu_84;
 reg   [6:0] ap_sig_allocacmp_store_res2_l_0_load;
 wire   [6:0] select_ln85_2_fu_184_p3;
-reg   [12:0] indvar_flatten58_fu_88;
-reg   [12:0] ap_sig_allocacmp_indvar_flatten58_load;
+reg   [12:0] indvar_flatten167_fu_88;
+reg   [12:0] ap_sig_allocacmp_indvar_flatten167_load;
 wire   [12:0] add_ln85_1_fu_152_p2;
 wire   [6:0] add_ln85_fu_164_p2;
 wire   [5:0] trunc_ln88_fu_192_p1;
 wire   [6:0] select_ln85_fu_176_p3;
-wire   [11:0] tmp_10_cast_fu_196_p3;
+wire   [11:0] tmp_134_cast_fu_196_p3;
 wire   [11:0] zext_ln88_fu_204_p1;
 wire   [11:0] add_ln88_fu_208_p2;
 wire   [3:0] trunc_ln86_fu_219_p1;
@@ -256,9 +256,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln85_fu_146_p2 == 1'd0))) begin
-            indvar_flatten58_fu_88 <= add_ln85_1_fu_152_p2;
+            indvar_flatten167_fu_88 <= add_ln85_1_fu_152_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            indvar_flatten58_fu_88 <= 13'd0;
+            indvar_flatten167_fu_88 <= 13'd0;
         end
     end
 end
@@ -372,9 +372,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_indvar_flatten58_load = 13'd0;
+        ap_sig_allocacmp_indvar_flatten167_load = 13'd0;
     end else begin
-        ap_sig_allocacmp_indvar_flatten58_load = indvar_flatten58_fu_88;
+        ap_sig_allocacmp_indvar_flatten167_load = indvar_flatten167_fu_88;
     end
 end
 
@@ -423,13 +423,13 @@ end
 
 assign Y_address0 = zext_ln88_1_fu_214_p1;
 
-assign add_ln85_1_fu_152_p2 = (ap_sig_allocacmp_indvar_flatten58_load + 13'd1);
+assign add_ln85_1_fu_152_p2 = (ap_sig_allocacmp_indvar_flatten167_load + 13'd1);
 
 assign add_ln85_fu_164_p2 = (ap_sig_allocacmp_store_res2_l_0_load + 7'd1);
 
 assign add_ln86_fu_229_p2 = (select_ln85_fu_176_p3 + 7'd1);
 
-assign add_ln88_fu_208_p2 = (tmp_10_cast_fu_196_p3 + zext_ln88_fu_204_p1);
+assign add_ln88_fu_208_p2 = (tmp_134_cast_fu_196_p3 + zext_ln88_fu_204_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -463,7 +463,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign bitcast_ln89_fu_265_p1 = Y_q0;
 
-assign icmp_ln85_fu_146_p2 = ((ap_sig_allocacmp_indvar_flatten58_load == 13'd4096) ? 1'b1 : 1'b0);
+assign icmp_ln85_fu_146_p2 = ((ap_sig_allocacmp_indvar_flatten167_load == 13'd4096) ? 1'b1 : 1'b0);
 
 assign icmp_ln86_fu_170_p2 = ((ap_sig_allocacmp_store_res2_l_1_load == 7'd64) ? 1'b1 : 1'b0);
 
@@ -541,7 +541,7 @@ assign select_ln85_fu_176_p3 = ((icmp_ln86_fu_170_p2[0:0] == 1'b1) ? 7'd0 : ap_s
 
 assign select_ln89_fu_295_p3 = ((icmp_ln89_reg_354[0:0] == 1'b1) ? 480'd0 : tmp_1_fu_287_p3);
 
-assign tmp_10_cast_fu_196_p3 = {{trunc_ln88_fu_192_p1}, {6'd0}};
+assign tmp_134_cast_fu_196_p3 = {{trunc_ln88_fu_192_p1}, {6'd0}};
 
 assign tmp_1_fu_287_p3 = {{bitcast_ln89_fu_265_p1}, {tmp_s_fu_277_p4}};
 

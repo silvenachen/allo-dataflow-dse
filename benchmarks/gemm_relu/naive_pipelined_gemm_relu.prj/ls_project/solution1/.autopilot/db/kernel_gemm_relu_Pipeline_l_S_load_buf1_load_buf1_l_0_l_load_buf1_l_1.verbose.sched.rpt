@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'kernel_gemm_relu_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'
 ================================================================
-* Date:           Fri Jan  9 17:50:33 2026
+* Date:           Tue Jan 13 10:58:41 2026
 
 * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
 * Project:        ls_project
@@ -92,7 +92,7 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%load_buf1_l_0 = alloca i32 1"   ---
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%indvar_flatten7 = alloca i32 1"   --->   Operation 9 'alloca' 'indvar_flatten7' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln72_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %sext_ln72"   --->   Operation 10 'read' 'sext_ln72_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln72_cast = sext i58 %sext_ln72_read"   --->   Operation 11 'sext' 'sext_ln72_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem1, void @empty_0, i32 0, i32 0, void @empty_5, i32 64, i32 4096, void @empty_13, void @empty_6, void @empty_5, i32 16, i32 16, i32 16, i32 16, void @empty_5, void @empty_5"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem1, void @empty_0, i32 0, i32 0, void @empty_19, i32 64, i32 4096, void @empty_13, void @empty_6, void @empty_19, i32 16, i32 16, i32 16, i32 16, void @empty_19, void @empty_19"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.46ns)   --->   "%store_ln0 = store i13 0, i13 %indvar_flatten7"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
 ST_1 : Operation 14 [1/1] (0.46ns)   --->   "%store_ln0 = store i7 0, i7 %load_buf1_l_0"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
 ST_1 : Operation 15 [1/1] (0.46ns)   --->   "%store_ln0 = store i7 0, i7 %load_buf1_l_1"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
@@ -131,7 +131,7 @@ ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln76 = zext i7 %select_ln72" 
 ST_3 : Operation 43 [1/1] (0.99ns)   --->   "%add_ln76 = add i12 %tmp_3_cast, i12 %zext_ln76" [kernel.cpp:76]   --->   Operation 43 'add' 'add_ln76' <Predicate = (!icmp_ln72)> <Delay = 0.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln76_1 = zext i12 %add_ln76" [kernel.cpp:76]   --->   Operation 44 'zext' 'zext_ln76_1' <Predicate = (!icmp_ln72)> <Delay = 0.00>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%buf1_addr = getelementptr i32 %buf1, i64 0, i64 %zext_ln76_1" [kernel.cpp:76]   --->   Operation 45 'getelementptr' 'buf1_addr' <Predicate = (!icmp_ln72)> <Delay = 0.00>
-ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln73 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5" [kernel.cpp:73]   --->   Operation 46 'specpipeline' 'specpipeline_ln73' <Predicate = (!icmp_ln72)> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%specpipeline_ln73 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_19" [kernel.cpp:73]   --->   Operation 46 'specpipeline' 'specpipeline_ln73' <Predicate = (!icmp_ln72)> <Delay = 0.00>
 ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln73 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [kernel.cpp:73]   --->   Operation 47 'specloopname' 'specloopname_ln73' <Predicate = (!icmp_ln72)> <Delay = 0.00>
 ST_3 : Operation 48 [1/1] (0.46ns)   --->   "%br_ln75 = br i1 %icmp_ln75, void %.split20._crit_edge, void" [kernel.cpp:75]   --->   Operation 48 'br' 'br_ln75' <Predicate = (!icmp_ln72)> <Delay = 0.46>
 ST_3 : Operation 49 [1/1] (0.46ns)   --->   "%br_ln75 = br void %.split20._crit_edge" [kernel.cpp:75]   --->   Operation 49 'br' 'br_ln75' <Predicate = (!icmp_ln72 & icmp_ln75)> <Delay = 0.46>
@@ -139,7 +139,7 @@ ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%empty = phi i512 %gmem1_addr_read,
 ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln75 = trunc i512 %empty" [kernel.cpp:75]   --->   Operation 51 'trunc' 'trunc_ln75' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%v27 = bitcast i32 %trunc_ln75" [kernel.cpp:75]   --->   Operation 52 'bitcast' 'v27' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln75_1 = partselect i480 @_ssdm_op_PartSelect.i480.i512.i32.i32, i512 %empty, i32 32, i32 511" [kernel.cpp:75]   --->   Operation 53 'partselect' 'trunc_ln75_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 54 [1/1] (1.29ns)   --->   "%store_ln76 = store i32 %v27, i12 %buf1_addr" [kernel.cpp:76]   --->   Operation 54 'store' 'store_ln76' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 4096> <RAM>
+ST_3 : Operation 54 [1/1] (1.29ns)   --->   "%store_ln76 = store i32 %v27, i12 %buf1_addr" [kernel.cpp:76]   --->   Operation 54 'store' 'store_ln76' <Predicate = true> <Delay = 1.29> <CoreInst = "RAM_1WnR">   --->   Core 84 'RAM_1WnR' <Latency = 1> <II = 1> <Delay = 1.29> <Storage> <Opcode : 'load' 'store'> <Ports = 17> <Width = 32> <Depth = 4096> <RAM>
 ST_3 : Operation 55 [1/1] (0.46ns)   --->   "%store_ln72 = store i7 %select_ln72_2, i7 %load_buf1_l_0" [kernel.cpp:72]   --->   Operation 55 'store' 'store_ln72' <Predicate = true> <Delay = 0.46>
 ST_3 : Operation 56 [1/1] (0.46ns)   --->   "%store_ln75 = store i480 %trunc_ln75_1, i480 %shiftreg90" [kernel.cpp:75]   --->   Operation 56 'store' 'store_ln75' <Predicate = true> <Delay = 0.46>
 ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 57 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>

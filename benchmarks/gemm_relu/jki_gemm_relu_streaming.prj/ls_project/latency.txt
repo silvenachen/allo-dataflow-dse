@@ -1,0 +1,233 @@
+[     0-279398] gemm_relu_stream_jki
+        [     0-     0] entry_proc
+        [     0-  4172] load_buf0.1
+                [    71-  4172] load_buf0.1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
+        [     0-  4172] load_buf1.1
+                [    71-  4172] load_buf1.1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
+        [  4173-275214] gemm_stage_0.1
+                [  4175-  4239] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [  4241-  8342] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [  8344-  8408] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [  8410-  8474] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [  8476- 12577] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 12579- 12643] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 12645- 12709] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 12711- 16812] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 16814- 16878] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 16880- 16944] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 16946- 21047] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 21049- 21113] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 21115- 21179] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 21181- 25282] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 25284- 25348] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 25350- 25414] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 25416- 29517] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 29519- 29583] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 29585- 29649] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 29651- 33752] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 33754- 33818] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 33820- 33884] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 33886- 37987] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 37989- 38053] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 38055- 38119] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 38121- 42222] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 42224- 42288] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 42290- 42354] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 42356- 46457] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 46459- 46523] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 46525- 46589] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 46591- 50692] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 50694- 50758] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 50760- 50824] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 50826- 54927] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 54929- 54993] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 54995- 55059] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 55061- 59162] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 59164- 59228] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 59230- 59294] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 59296- 63397] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 63399- 63463] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 63465- 63529] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 63531- 67632] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 67634- 67698] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 67700- 67764] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 67766- 71867] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 71869- 71933] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 71935- 71999] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 72001- 76102] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 76104- 76168] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 76170- 76234] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 76236- 80337] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 80339- 80403] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 80405- 80469] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 80471- 84572] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 84574- 84638] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 84640- 84704] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 84706- 88807] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 88809- 88873] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 88875- 88939] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 88941- 93042] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 93044- 93108] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 93110- 93174] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 93176- 97277] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [ 97279- 97343] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [ 97345- 97409] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [ 97411-101512] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [101514-101578] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [101580-101644] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [101646-105747] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [105749-105813] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [105815-105879] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [105881-109982] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [109984-110048] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [110050-110114] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [110116-114217] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [114219-114283] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [114285-114349] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [114351-118452] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [118454-118518] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [118520-118584] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [118586-122687] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [122689-122753] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [122755-122819] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [122821-126922] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [126924-126988] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [126990-127054] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [127056-131157] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [131159-131223] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [131225-131289] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [131291-135392] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [135394-135458] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [135460-135524] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [135526-139627] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [139629-139693] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [139695-139759] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [139761-143862] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [143864-143928] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [143930-143994] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [143996-148097] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [148099-148163] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [148165-148229] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [148231-152332] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [152334-152398] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [152400-152464] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [152466-156567] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [156569-156633] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [156635-156699] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [156701-160802] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [160804-160868] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [160870-160934] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [160936-165037] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [165039-165103] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [165105-165169] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [165171-169272] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [169274-169338] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [169340-169404] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [169406-173507] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [173509-173573] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [173575-173639] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [173641-177742] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [177744-177808] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [177810-177874] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [177876-181977] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [181979-182043] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [182045-182109] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [182111-186212] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [186214-186278] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [186280-186344] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [186346-190447] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [190449-190513] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [190515-190579] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [190581-194682] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [194684-194748] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [194750-194814] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [194816-198917] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [198919-198983] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [198985-199049] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [199051-203152] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [203154-203218] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [203220-203284] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [203286-207387] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [207389-207453] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [207455-207519] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [207521-211622] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [211624-211688] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [211690-211754] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [211756-215857] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [215859-215923] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [215925-215989] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [215991-220092] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [220094-220158] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [220160-220224] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [220226-224327] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [224329-224393] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [224395-224459] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [224461-228562] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [228564-228628] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [228630-228694] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [228696-232797] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [232799-232863] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [232865-232929] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [232931-237032] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [237034-237098] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [237100-237164] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [237166-241267] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [241269-241333] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [241335-241399] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [241401-245502] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [245504-245568] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [245570-245634] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [245636-249737] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [249739-249803] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [249805-249869] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [249871-253972] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [253974-254038] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [254040-254104] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [254106-258207] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [258209-258273] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [258275-258339] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [258341-262442] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [262444-262508] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [262510-262574] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [262576-266677] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [266679-266743] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [266745-266809] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [266811-270912] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [270914-270978] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+                [270980-271044] gemm_stage_0.1_Pipeline_VITIS_LOOP_26_1
+                [271046-275147] gemm_stage_0.1_Pipeline_l_S_k_0_k_l_S_i_0_i
+                [275149-275213] gemm_stage_0.1_Pipeline_l_S_i_2_i1
+        [  4174-275215] relu_stage_0.1
+        [275216-279398] store_res2.1
+                [275218-279315] store_res2.1_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+---------+------------+-------------+-----+
+    |                                       Modules                                      |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |          |         |            |             |     |
+    |                                       & Loops                                      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |   DSP   |     FF     |     LUT     | URAM|
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+---------+------------+-------------+-----+
+    |+ gemm_relu_stream_jki*                                                             |  Timing|  -0.00|   275596|  2.756e+06|         -|   271426|     -|  dataflow|  221 (5%)|  5 (~0%)|  8895 (~0%)|  10491 (~0%)|    -|
+    | + grp_load_buf0_1_fu_122                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|     -|        no|         -|        -|  1176 (~0%)|   1172 (~0%)|    -|
+    |  + grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|     -|        no|         -|        -|  1044 (~0%)|    689 (~0%)|    -|
+    |   o l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|  4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_load_buf1_1_fu_130                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|     -|        no|         -|        -|  1176 (~0%)|   1172 (~0%)|    -|
+    |  + grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|     -|        no|         -|        -|  1044 (~0%)|    689 (~0%)|    -|
+    |   o l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|  4096|       yes|         -|        -|           -|            -|    -|
+    | + grp_gemm_stage_0_1_fu_138                                                        |       -|   0.00|   271425|  2.714e+06|         -|   271425|     -|        no|   2 (~0%)|  5 (~0%)|   555 (~0%)|    856 (~0%)|    -|
+    |  + grp_gemm_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_48                               |       -|   5.29|       66|    660.000|         -|       66|     -|        no|         -|        -|     9 (~0%)|     52 (~0%)|    -|
+    |   o VITIS_LOOP_26_1                                                                |       -|   7.30|       64|    640.000|         1|        1|    64|       yes|         -|        -|           -|            -|    -|
+    |  + grp_gemm_stage_0_1_Pipeline_l_S_k_0_k_l_S_i_0_i_fu_53                           |       -|   0.00|     4103|  4.103e+04|         -|     4103|     -|        no|         -|  5 (~0%)|   511 (~0%)|    547 (~0%)|    -|
+    |   o l_S_k_0_k_l_S_i_0_i                                                            |       -|   7.30|     4101|  4.101e+04|         7|        1|  4096|       yes|         -|        -|           -|            -|    -|
+    |  + grp_gemm_stage_0_1_Pipeline_l_S_i_2_i1_fu_63                                    |       -|   3.90|       66|    660.000|         -|       66|     -|        no|         -|        -|    10 (~0%)|     74 (~0%)|    -|
+    |   o l_S_i_2_i1                                                                     |       -|   7.30|       64|    640.000|         2|        1|    64|       yes|         -|        -|           -|            -|    -|
+    |  o l_S_j_0_j                                                                       |       -|   7.30|   271424|  2.714e+06|      4241|        -|    64|        no|         -|        -|           -|            -|    -|
+    | + grp_relu_stage_0_1_fu_145                                                        |       -|   3.28|     4099|  4.099e+04|         -|     4099|     -|        no|         -|        -|    68 (~0%)|    256 (~0%)|    -|
+    |  o l_S_j_0_j1_l_S_i_0_i2                                                           |       -|   7.30|     4097|  4.097e+04|         3|        1|  4096|       yes|         -|        -|           -|            -|    -|
+    | + v39_c_channel_entry_proc_fu_151                                                  |       -|   7.30|        0|      0.000|         -|        0|     -|        no|         -|        -|    66 (~0%)|     20 (~0%)|    -|
+    | + grp_store_res2_1_fu_156                                                          |  Timing|  -0.00|     4169|  4.169e+04|         -|     4169|     -|        no|         -|        -|  1159 (~0%)|   1655 (~0%)|    -|
+    |  + grp_store_res2_1_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_54  |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|     -|        no|         -|        -|  1028 (~0%)|   1155 (~0%)|    -|
+    |   o l_S_store_res2_store_res2_l_0_l_store_res2_l_1                                 |       -|   7.30|     4097|  4.097e+04|         3|        1|  4096|       yes|         -|        -|           -|            -|    -|
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+---------+------------+-------------+-----+
+
