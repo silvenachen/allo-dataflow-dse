@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mm2_stage_0_1'" level="0">
+<item name = "Date">Wed Jan 14 16:41:21 2026
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">ls_project</item>
+<item name = "Solution">solution1 (Vitis Kernel Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.297 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">275271, 275271, 2.753 ms, 2.753 ms, 275271, 275271, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_53_1_VITIS_LOOP_54_2_fu_58">mm2_stage_0_1_Pipeline_VITIS_LOOP_53_1_VITIS_LOOP_54_2, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, no</column>
+<column name="grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_60_3_fu_64">mm2_stage_0_1_Pipeline_VITIS_LOOP_60_3, 66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+<column name="grp_mm2_stage_0_1_Pipeline_l_S_i_3_i2_l_S_j_3_j2_fu_71">mm2_stage_0_1_Pipeline_l_S_i_3_i2_l_S_j_3_j2, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, no</column>
+<column name="grp_mm2_stage_0_1_Pipeline_l_S_i_0_i1_l_S_j_0_j1_fu_78">mm2_stage_0_1_Pipeline_l_S_i_0_i1_l_S_j_0_j1, 4103, 4103, 41.030 us, 41.030 us, 4103, 4103, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- l_S_k_0_k1">267072, 267072, 4173, -, -, 64, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

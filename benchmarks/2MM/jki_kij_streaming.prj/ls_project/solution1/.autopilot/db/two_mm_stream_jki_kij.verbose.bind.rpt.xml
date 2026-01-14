@@ -1,0 +1,52 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'two_mm_stream_jki_kij'" level="0">
+<item name = "Date">Wed Jan 14 16:41:23 2026
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">ls_project</item>
+<item name = "Solution">solution1 (Vitis Kernel Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">287900, 287900, 2.879 ms, 2.879 ms, 275272, 275272, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_buf0_1_fu_142">load_buf0_1, 4170, 4170, 41.700 us, 41.700 us, 4170, 4170, no</column>
+<column name="grp_load_buf1_1_fu_150">load_buf1_1, 4170, 4170, 41.700 us, 41.700 us, 4170, 4170, no</column>
+<column name="grp_load_buf2_1_fu_158">load_buf2_1, 4170, 4170, 41.700 us, 41.700 us, 4170, 4170, no</column>
+<column name="grp_mm1_stage_0_1_fu_166">mm1_stage_0_1, 271425, 271425, 2.714 ms, 2.714 ms, 271425, 271425, no</column>
+<column name="grp_mm2_stage_0_1_fu_173">mm2_stage_0_1, 275271, 275271, 2.753 ms, 2.753 ms, 275271, 275271, no</column>
+<column name="v54_c_channel_entry_proc_fu_180">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_store_res3_1_fu_185">store_res3_1, 4169, 4169, 41.690 us, 41.690 us, 4169, 4169, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
