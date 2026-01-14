@@ -1,0 +1,36 @@
+[     0-532661] kernel_2mm
+        [    72-  4173] kernel_2mm_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
+        [    72-  4173] kernel_2mm_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
+        [    72-  4173] kernel_2mm_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1
+        [    72-  4168] kernel_2mm_Pipeline_VITIS_LOOP_128_1_VITIS_LOOP_129_2
+        [    72-  4168] kernel_2mm_Pipeline_VITIS_LOOP_134_3_VITIS_LOOP_135_4
+        [  4175-266325] kernel_2mm_Pipeline_l_S_i_j_k_0_i_l_k_l_j
+        [266327-528477] kernel_2mm_Pipeline_l_S_i_j_k_0_i1_l_k1_l_j1
+        [528479-532576] kernel_2mm_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1
+
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+------------+-----+
+    |                                      Modules                                     |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |          |         |             |            |     |
+    |                                      & Loops                                     |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|   BRAM   |   DSP   |      FF     |     LUT    | URAM|
+    +----------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+------------+-----+
+    |+ kernel_2mm                                                                      |  Timing|  -0.00|   532646|  5.326e+06|         -|   532647|       -|        no|  272 (6%)|  5 (~0%)|  11394 (~0%)|  13269 (1%)|    -|
+    | + grp_kernel_2mm_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_171     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1044 (~0%)|   689 (~0%)|    -|
+    |  o l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1                                   |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_179     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1044 (~0%)|   689 (~0%)|    -|
+    |  o l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1                                   |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_187     |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1044 (~0%)|   689 (~0%)|    -|
+    |  o l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1                                   |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_VITIS_LOOP_128_1_VITIS_LOOP_129_2_fu_195               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|         -|        -|     29 (~0%)|   167 (~0%)|    -|
+    |  o VITIS_LOOP_128_1_VITIS_LOOP_129_2                                             |       -|   7.30|     4096|  4.096e+04|         1|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_VITIS_LOOP_134_3_VITIS_LOOP_135_4_fu_200               |       -|   3.77|     4098|  4.098e+04|         -|     4098|       -|        no|         -|        -|     29 (~0%)|   167 (~0%)|    -|
+    |  o VITIS_LOOP_134_3_VITIS_LOOP_135_4                                             |       -|   7.30|     4096|  4.096e+04|         1|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_205                           |       -|   0.00|   262151|  2.622e+06|         -|   262151|       -|        no|         -|        -|    252 (~0%)|   392 (~0%)|    -|
+    |  o l_S_i_j_k_0_i_l_k_l_j                                                         |       -|   7.30|   262149|  2.621e+06|         7|        1|  262144|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_l_S_i_j_k_0_i1_l_k1_l_j1_fu_212                        |       -|   0.00|   262151|  2.622e+06|         -|   262151|       -|        no|         -|        -|    252 (~0%)|   392 (~0%)|    -|
+    |  o l_S_i_j_k_0_i1_l_k1_l_j1                                                      |       -|   7.30|   262149|  2.621e+06|         7|        1|  262144|       yes|         -|        -|            -|           -|    -|
+    | + grp_kernel_2mm_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_219  |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1028 (~0%)|  1155 (~0%)|    -|
+    |  o l_S_store_res3_store_res3_l_0_l_store_res3_l_1                                |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    +----------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+------------+-----+

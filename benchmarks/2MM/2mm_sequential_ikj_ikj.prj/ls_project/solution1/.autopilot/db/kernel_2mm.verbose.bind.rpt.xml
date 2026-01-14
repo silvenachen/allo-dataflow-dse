@@ -1,0 +1,53 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'kernel_2mm'" level="0">
+<item name = "Date">Wed Jan 14 09:26:53 2026
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">ls_project</item>
+<item name = "Solution">solution1 (Vitis Kernel Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">532646, 532646, 5.326 ms, 5.326 ms, 532647, 532647, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_kernel_2mm_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_171">kernel_2mm_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
+<column name="grp_kernel_2mm_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_179">kernel_2mm_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
+<column name="grp_kernel_2mm_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_187">kernel_2mm_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
+<column name="grp_kernel_2mm_Pipeline_VITIS_LOOP_128_1_VITIS_LOOP_129_2_fu_195">kernel_2mm_Pipeline_VITIS_LOOP_128_1_VITIS_LOOP_129_2, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, no</column>
+<column name="grp_kernel_2mm_Pipeline_VITIS_LOOP_134_3_VITIS_LOOP_135_4_fu_200">kernel_2mm_Pipeline_VITIS_LOOP_134_3_VITIS_LOOP_135_4, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, no</column>
+<column name="grp_kernel_2mm_Pipeline_l_S_i_j_k_0_i_l_k_l_j_fu_205">kernel_2mm_Pipeline_l_S_i_j_k_0_i_l_k_l_j, 262151, 262151, 2.622 ms, 2.622 ms, 262151, 262151, no</column>
+<column name="grp_kernel_2mm_Pipeline_l_S_i_j_k_0_i1_l_k1_l_j1_fu_212">kernel_2mm_Pipeline_l_S_i_j_k_0_i1_l_k1_l_j1, 262151, 262151, 2.622 ms, 2.622 ms, 262151, 262151, no</column>
+<column name="grp_kernel_2mm_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_219">kernel_2mm_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

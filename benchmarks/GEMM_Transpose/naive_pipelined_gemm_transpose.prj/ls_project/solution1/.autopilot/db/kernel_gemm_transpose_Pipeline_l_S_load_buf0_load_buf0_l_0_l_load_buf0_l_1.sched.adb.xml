@@ -121,7 +121,7 @@ newFuncRoot:5 %sext_ln66_cast = sext i58 %sext_ln66_read
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem0, void @empty_1, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_19, void @empty, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem0, void @empty_16, i32 0, i32 0, void @empty_17, i32 64, i32 0, void @empty_18, void @empty_5, void @empty_17, i32 16, i32 16, i32 16, i32 16, void @empty_17, void @empty_17
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -520,10 +520,10 @@ load_buf0.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="28" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.split16:5 %empty_30 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096
+.split16:5 %empty_29 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096
 
 ]]></Node>
-<StgValue><ssdm name="empty_30"/></StgValue>
+<StgValue><ssdm name="empty_29"/></StgValue>
 </operation>
 
 <operation id="37" st_id="3" stage="1" lat="1">
@@ -680,7 +680,7 @@ load_buf0.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-.split16:18 %specpipeline_ln67 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0
+.split16:18 %specpipeline_ln67 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_17
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln67"/></StgValue>
@@ -696,7 +696,7 @@ load_buf0.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="42" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split16:19 %specloopname_ln67 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9
+.split16:19 %specloopname_ln67 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln67"/></StgValue>

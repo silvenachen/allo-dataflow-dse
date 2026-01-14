@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="two_mm_stream_ikj_jki.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_two_mm_stream_ikj_jki_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki//AESL_inst_two_mm_stream_ikj_jki_activity">
+         <obj_property name="label">AESL_inst_two_mm_stream_ikj_jki_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_two_mm_stream_ikj_jki_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_two_mm_stream_ikj_jki_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki//AESL_inst_two_mm_stream_ikj_jki_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki//AESL_inst_two_mm_stream_ikj_jki_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki//AESL_inst_two_mm_stream_ikj_jki_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/entry_proc_U0_activity">
+            <obj_property name="label">entry_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/load_buf0_1_U0_activity">
+            <obj_property name="label">load_buf0_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">load_buf0_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_buf0_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/load_buf0_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/load_buf0_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/load_buf0_1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity">
+               <obj_property name="label">grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/load_buf1_1_U0_activity">
+            <obj_property name="label">load_buf1_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">load_buf1_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_buf1_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/load_buf1_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/load_buf1_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/load_buf1_1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity">
+               <obj_property name="label">grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/load_buf2_1_U0_activity">
+            <obj_property name="label">load_buf2_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">load_buf2_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_buf2_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/load_buf2_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/load_buf2_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/load_buf2_1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity">
+               <obj_property name="label">grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/mm1_stage_0_1_U0_activity">
+            <obj_property name="label">mm1_stage_0_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">mm1_stage_0_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">mm1_stage_0_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/mm1_stage_0_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/mm1_stage_0_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/mm1_stage_0_1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity">
+               <obj_property name="label">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity">
+               <obj_property name="label">grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity">
+               <obj_property name="label">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/mm2_stage_0_1_U0_activity">
+            <obj_property name="label">mm2_stage_0_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">mm2_stage_0_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">mm2_stage_0_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/mm2_stage_0_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/mm2_stage_0_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/mm2_stage_0_1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity">
+               <obj_property name="label">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity">
+               <obj_property name="label">grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity">
+               <obj_property name="label">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity">
+               <obj_property name="label">grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity">
+               <obj_property name="label">grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/store_res3_1_U0_activity">
+            <obj_property name="label">store_res3_1_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">store_res3_1_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">store_res3_1_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/store_res3_1_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/store_res3_1_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/store_res3_1_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity">
+               <obj_property name="label">grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki//AESL_inst_two_mm_stream_ikj_jki_activity">
+      <obj_property name="ElementShortName">AESL_inst_two_mm_stream_ikj_jki_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_two_mm_stream_ikj_jki_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_two_mm_stream_ikj_jki_group">
+      <obj_property name="label">AESL_inst_two_mm_stream_ikj_jki</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/entry_proc_U0_activity">
+         <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/load_buf0_1_U0_activity">
+         <obj_property name="ElementShortName">load_buf0_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">load_buf0_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/load_buf1_1_U0_activity">
+         <obj_property name="ElementShortName">load_buf1_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">load_buf1_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/load_buf2_1_U0_activity">
+         <obj_property name="ElementShortName">load_buf2_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">load_buf2_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/mm1_stage_0_1_U0_activity">
+         <obj_property name="ElementShortName">mm1_stage_0_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">mm1_stage_0_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/mm2_stage_0_1_U0_activity">
+         <obj_property name="ElementShortName">mm2_stage_0_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">mm2_stage_0_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/store_res3_1_U0_activity">
+         <obj_property name="ElementShortName">store_res3_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">store_res3_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_two_mm_stream_ikj_jki_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/ap_continue">
+            <obj_property name="ElementShortName">ap_continue</obj_property>
+            <obj_property name="ObjectShortName">ap_continue</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="entry_proc_U0_group">
+         <obj_property name="label">entry_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="entry_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/entry_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="load_buf0_1_U0_group">
+         <obj_property name="label">load_buf0_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity">
+            <obj_property name="ElementShortName">grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf0_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf0_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf0_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v36_group">
+               <obj_property name="label">v36(buf0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/v36_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/v36_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/v36_ce0">
+                  <obj_property name="ElementShortName">v36_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v36_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/v36_we0">
+                  <obj_property name="ElementShortName">v36_we0</obj_property>
+                  <obj_property name="ObjectShortName">v36_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_group">
+            <obj_property name="label">grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf0_1_U0/grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="load_buf1_1_U0_group">
+         <obj_property name="label">load_buf1_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity">
+            <obj_property name="ElementShortName">grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf1_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf1_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf1_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v41_group">
+               <obj_property name="label">v41(buf1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/v41_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/v41_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/v41_ce0">
+                  <obj_property name="ElementShortName">v41_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v41_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/v41_we0">
+                  <obj_property name="ElementShortName">v41_we0</obj_property>
+                  <obj_property name="ObjectShortName">v41_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_group">
+            <obj_property name="label">grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf1_1_U0/grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="load_buf2_1_U0_group">
+         <obj_property name="label">load_buf2_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity">
+            <obj_property name="ElementShortName">grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf2_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf2_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_buf2_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v46_group">
+               <obj_property name="label">v46(buf2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/v46_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/v46_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/v46_ce0">
+                  <obj_property name="ElementShortName">v46_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v46_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/v46_we0">
+                  <obj_property name="ElementShortName">v46_we0</obj_property>
+                  <obj_property name="ObjectShortName">v46_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_group">
+            <obj_property name="label">grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/load_buf2_1_U0/grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="mm1_stage_0_1_U0_group">
+         <obj_property name="label">mm1_stage_0_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity">
+            <obj_property name="ElementShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity">
+            <obj_property name="ElementShortName">grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity">
+            <obj_property name="ElementShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="mm1_stage_0_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v0_group">
+               <obj_property name="label">v0(buf0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v0_ce0">
+                  <obj_property name="ElementShortName">v0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="v1_group">
+               <obj_property name="label">v1(buf1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v1_ce0">
+                  <obj_property name="ElementShortName">v1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="mm1_stage_0_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="mm1_stage_0_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v631_group">
+               <obj_property name="label">v631(v63_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v631_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v631_full_n">
+                  <obj_property name="ElementShortName">v631_full_n</obj_property>
+                  <obj_property name="ObjectShortName">v631_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/v631_write">
+                  <obj_property name="ElementShortName">v631_write</obj_property>
+                  <obj_property name="ObjectShortName">v631_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_group">
+            <obj_property name="label">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1_fu_52/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_group">
+            <obj_property name="label">grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j_fu_57/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_group">
+            <obj_property name="label">grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm1_stage_0_1_U0/grp_mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2_fu_67/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="mm2_stage_0_1_U0_group">
+         <obj_property name="label">mm2_stage_0_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity">
+            <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity">
+            <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity">
+            <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity">
+            <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity">
+            <obj_property name="ElementShortName">grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="mm2_stage_0_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v15_group">
+               <obj_property name="label">v15(buf2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v15_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v15_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v15_ce0">
+                  <obj_property name="ElementShortName">v15_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v15_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="v631_group">
+               <obj_property name="label">v631(v63_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v631_dout">
+                  <obj_property name="ElementShortName">v631_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">v631_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v631_empty_n">
+                  <obj_property name="ElementShortName">v631_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">v631_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v631_read">
+                  <obj_property name="ElementShortName">v631_read</obj_property>
+                  <obj_property name="ObjectShortName">v631_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="mm2_stage_0_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="mm2_stage_0_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v16_group">
+               <obj_property name="label">v16(buf3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v16_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v16_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v16_ce0">
+                  <obj_property name="ElementShortName">v16_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v16_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/v16_we0">
+                  <obj_property name="ElementShortName">v16_we0</obj_property>
+                  <obj_property name="ObjectShortName">v16_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_group">
+            <obj_property name="label">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1_fu_70/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_group">
+            <obj_property name="label">grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_j_0_j1_fu_77/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_group">
+            <obj_property name="label">grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2_fu_84/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_group">
+            <obj_property name="label">grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2_fu_89/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_group">
+            <obj_property name="label">grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/mm2_stage_0_1_U0/grp_mm2_stage_0_1_Pipeline_l_S_i_4_i3_fu_98/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="store_res3_1_U0_group">
+         <obj_property name="label">store_res3_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity">
+            <obj_property name="ElementShortName">grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="store_res3_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="v50_group">
+               <obj_property name="label">v50(buf3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/v50_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/v50_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/v50_ce0">
+                  <obj_property name="ElementShortName">v50_ce0</obj_property>
+                  <obj_property name="ObjectShortName">v50_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="store_res3_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="store_res3_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_group">
+            <obj_property name="label">grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_two_mm_stream_ikj_jki_top/AESL_inst_two_mm_stream_ikj_jki/store_res3_1_U0/grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

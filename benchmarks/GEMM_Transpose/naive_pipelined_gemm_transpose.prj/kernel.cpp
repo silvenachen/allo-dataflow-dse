@@ -21,8 +21,8 @@ void gemm_stage(
   float v1[64][64],
   float v2[64][64]
 ) {	// L4
-  #pragma HLS array_partition variable=v2 dim=1 
-  #pragma HLS array_partition variable=v2 dim=2 
+  // #pragma HLS array_partition variable=v2 dim=1 
+  // #pragma HLS array_partition variable=v2 dim=2 
   #pragma HLS inline off
 
   l_S_i_j_k_0_i: for (int i = 0; i < 64; i++) {	// L5
@@ -45,10 +45,10 @@ void transpose_stage(
   float v12[64][64]
 ) {	// L19
   #pragma HLS inline off
-  #pragma HLS array_partition variable=v11 dim=1 
-  #pragma HLS array_partition variable=v11 dim=2 
+  // #pragma HLS array_partition variable=v11 dim=1 
+  // #pragma HLS array_partition variable=v11 dim=2 
 
-  #pragma HLS array_partition variable=v12 dim=1 
+  // #pragma HLS array_partition variable=v12 dim=1 
 
   l_S_i_j_0_i1: for (int i1 = 0; i1 < 64; i1++) {	// L20
   #pragma HLS pipeline II=1
@@ -89,7 +89,7 @@ void store_res2(
   float v26[64][64],
   float v27[4096]
 ) {	//
-  #pragma HLS array_partition variable=v26 dim=1 
+  // #pragma HLS array_partition variable=v26 dim=1 
 
   l_S_store_res2_store_res2_l_0: for (int store_res2_l_0 = 0; store_res2_l_0 < 64; store_res2_l_0++) {	//
     l_store_res2_l_1: for (int store_res2_l_1 = 0; store_res2_l_1 < 64; store_res2_l_1++) {	//
@@ -113,8 +113,8 @@ void kernel_gemm_transpose(
   float buf1[64][64];	//
   load_buf1(v32, buf1);	//
   float C[64][64];	// L31
-  #pragma HLS array_partition variable=C dim=1 
-  #pragma HLS array_partition variable=C dim=2 
+  // #pragma HLS array_partition variable=C dim=1 
+  // #pragma HLS array_partition variable=C dim=2 
 
   for (int v37 = 0; v37 < 64; v37++) {	// L32
     for (int v38 = 0; v38 < 64; v38++) {	// L32
@@ -122,11 +122,11 @@ void kernel_gemm_transpose(
     }
   }
   float D[64][64];	// L33
-  #pragma HLS array_partition variable=D dim=1 
+  // #pragma HLS array_partition variable=D dim=1 
 
   gemm_stage(buf0, buf1, C);	// L34
-  transpose_stage(C, D);	// L35
-  store_res2(D, v33);	//
+  // transpose_stage(C, D);	// L35
+  store_res2(C, v33);	//
 }
 
 

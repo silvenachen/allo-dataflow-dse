@@ -1,0 +1,318 @@
+[     0-759461] two_mm_stream_ijk_ikj
+        [     0-     0] entry_proc
+        [     0-  4172] load_buf0.1
+                [    71-  4172] load_buf0.1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1
+        [     0-  4172] load_buf1.1
+                [    71-  4172] load_buf1.1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1
+        [     0-  4172] load_buf2.1
+                [    71-  4172] load_buf2.1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1
+        [  4173-751107] mm1_stage_0.1
+        [  4173-755278] mm2_stage_0.1
+                [  4175- 12370] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [  4175-  4239] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 12372- 16473] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 16475- 16539] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 16541- 24096] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 16541- 16605] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 24098- 28199] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 28201- 28265] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 28267- 35822] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 28267- 28331] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 35824- 39925] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 39927- 39991] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 39993- 47548] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 39993- 40057] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 47550- 51651] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 51653- 51717] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 51719- 59274] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 51719- 51783] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 59276- 63377] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 63379- 63443] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 63445- 71000] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 63445- 63509] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 71002- 75103] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 75105- 75169] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 75171- 82726] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 75171- 75235] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 82728- 86829] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 86831- 86895] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 86897- 94452] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 86897- 86961] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [ 94454- 98555] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [ 98557- 98621] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [ 98623-106178] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [ 98623- 98687] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [106180-110281] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [110283-110347] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [110349-117904] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [110349-110413] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [117906-122007] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [122009-122073] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [122075-129630] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [122075-122139] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [129632-133733] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [133735-133799] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [133801-141356] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [133801-133865] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [141358-145459] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [145461-145525] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [145527-153082] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [145527-145591] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [153084-157185] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [157187-157251] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [157253-164808] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [157253-157317] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [164810-168911] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [168913-168977] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [168979-176534] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [168979-169043] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [176536-180637] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [180639-180703] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [180705-188260] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [180705-180769] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [188262-192363] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [192365-192429] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [192431-199986] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [192431-192495] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [199988-204089] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [204091-204155] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [204157-211712] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [204157-204221] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [211714-215815] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [215817-215881] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [215883-223438] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [215883-215947] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [223440-227541] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [227543-227607] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [227609-235164] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [227609-227673] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [235166-239267] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [239269-239333] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [239335-246890] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [239335-239399] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [246892-250993] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [250995-251059] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [251061-258616] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [251061-251125] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [258618-262719] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [262721-262785] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [262787-270342] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [262787-262851] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [270344-274445] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [274447-274511] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [274513-282068] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [274513-274577] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [282070-286171] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [286173-286237] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [286239-293794] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [286239-286303] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [293796-297897] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [297899-297963] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [297965-305520] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [297965-298029] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [305522-309623] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [309625-309689] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [309691-317246] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [309691-309755] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [317248-321349] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [321351-321415] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [321417-328972] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [321417-321481] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [328974-333075] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [333077-333141] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [333143-340698] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [333143-333207] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [340700-344801] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [344803-344867] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [344869-352424] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [344869-344933] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [352426-356527] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [356529-356593] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [356595-364150] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [356595-356659] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [364152-368253] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [368255-368319] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [368321-375876] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [368321-368385] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [375878-379979] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [379981-380045] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [380047-387602] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [380047-380111] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [387604-391705] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [391707-391771] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [391773-399328] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [391773-391837] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [399330-403431] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [403433-403497] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [403499-411054] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [403499-403563] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [411056-415157] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [415159-415223] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [415225-422780] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [415225-415289] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [422782-426883] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [426885-426949] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [426951-434506] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [426951-427015] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [434508-438609] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [438611-438675] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [438677-446232] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [438677-438741] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [446234-450335] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [450337-450401] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [450403-457958] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [450403-450467] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [457960-462061] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [462063-462127] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [462129-469684] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [462129-462193] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [469686-473787] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [473789-473853] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [473855-481410] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [473855-473919] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [481412-485513] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [485515-485579] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [485581-493136] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [485581-485645] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [493138-497239] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [497241-497305] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [497307-504862] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [497307-497371] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [504864-508965] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [508967-509031] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [509033-516588] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [509033-509097] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [516590-520691] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [520693-520757] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [520759-528314] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [520759-520823] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [528316-532417] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [532419-532483] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [532485-540040] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [532485-532549] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [540042-544143] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [544145-544209] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [544211-551766] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [544211-544275] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [551768-555869] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [555871-555935] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [555937-563492] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [555937-556001] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [563494-567595] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [567597-567661] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [567663-575218] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [567663-567727] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [575220-579321] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [579323-579387] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [579389-586944] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [579389-579453] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [586946-591047] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [591049-591113] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [591115-598670] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [591115-591179] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [598672-602773] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [602775-602839] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [602841-610396] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [602841-602905] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [610398-614499] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [614501-614565] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [614567-622122] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [614567-614631] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [622124-626225] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [626227-626291] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [626293-633848] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [626293-626357] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [633850-637951] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [637953-638017] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [638019-645574] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [638019-638083] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [645576-649677] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [649679-649743] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [649745-657300] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [649745-649809] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [657302-661403] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [661405-661469] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [661471-669026] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [661471-661535] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [669028-673129] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [673131-673195] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [673197-680752] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [673197-673261] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [680754-684855] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [684857-684921] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [684923-692478] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [684923-684987] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [692480-696581] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [696583-696647] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [696649-704204] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [696649-696713] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [704206-708307] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [708309-708373] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [708375-715930] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [708375-708439] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [715932-720033] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [720035-720099] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [720101-727656] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [720101-720165] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [727658-731759] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [731761-731825] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [731827-739382] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [731827-731891] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [739384-743485] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [743487-743551] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+                [743553-751108] mm2_stage_0.1_Pipeline_l_S_k_0_k1
+                [743553-743617] mm2_stage_0.1_Pipeline_VITIS_LOOP_57_1
+                [751110-755211] mm2_stage_0.1_Pipeline_l_S_k_1_k2_l_S_j_1_j1
+                [755213-755277] mm2_stage_0.1_Pipeline_l_S_j_3_j2
+        [755279-759461] store_res3.1
+                [755281-759378] store_res3.1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+------------+-----+
+    |                                       Modules                                      |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |          |         |             |            |     |
+    |                                       & Loops                                      |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|   BRAM   |   DSP   |      FF     |     LUT    | URAM|
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+------------+-----+
+    |+ two_mm_stream_ijk_ikj*                                                            |  Timing|  -0.00|   536874|  5.369e+06|         -|   524295|       -|  dataflow|  295 (7%)|  8 (~0%)|  12004 (~0%)|  14134 (1%)|    -|
+    | + grp_load_buf0_1_fu_142                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|       -|        no|         -|        -|   1176 (~0%)|  1172 (~0%)|    -|
+    |  + grp_load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1044 (~0%)|   689 (~0%)|    -|
+    |   o l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_load_buf1_1_fu_150                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|       -|        no|         -|        -|   1176 (~0%)|  1172 (~0%)|    -|
+    |  + grp_load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1044 (~0%)|   689 (~0%)|    -|
+    |   o l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_load_buf2_1_fu_158                                                           |  Timing|  -0.00|     4170|  4.170e+04|         -|     4170|       -|        no|         -|        -|   1176 (~0%)|  1172 (~0%)|    -|
+    |  + grp_load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1_fu_51      |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1044 (~0%)|   689 (~0%)|    -|
+    |   o l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1                                    |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    | + grp_mm1_stage_0_1_fu_166                                                         |       -|   0.09|   524294|  5.243e+06|         -|   524294|       -|        no|         -|  3 (~0%)|    485 (~0%)|   920 (~0%)|    -|
+    |  o l_S_i_0_i_l_S_j_0_j_l_S_k_0_k                                                   |      II|   7.30|   524292|  5.243e+06|         7|        2|  262144|       yes|         -|        -|            -|           -|    -|
+    | + grp_mm2_stage_0_1_fu_173                                                         |       -|   0.00|   271425|  2.714e+06|         -|   271425|       -|        no|   3 (~0%)|  5 (~0%)|    585 (~0%)|   937 (~0%)|    -|
+    |  + grp_mm2_stage_0_1_Pipeline_l_S_k_0_k1_fu_58                                     |       -|   3.90|       66|    660.000|         -|       66|       -|        no|         -|        -|     17 (~0%)|    74 (~0%)|    -|
+    |   o l_S_k_0_k1                                                                     |       -|   7.30|       64|    640.000|         2|        1|      64|       yes|         -|        -|            -|           -|    -|
+    |  + grp_mm2_stage_0_1_Pipeline_VITIS_LOOP_57_1_fu_65                                |       -|   5.29|       66|    660.000|         -|       66|       -|        no|         -|        -|      9 (~0%)|    52 (~0%)|    -|
+    |   o VITIS_LOOP_57_1                                                                |       -|   7.30|       64|    640.000|         1|        1|      64|       yes|         -|        -|            -|           -|    -|
+    |  + grp_mm2_stage_0_1_Pipeline_l_S_k_1_k2_l_S_j_1_j1_fu_70                          |       -|   0.00|     4103|  4.103e+04|         -|     4103|       -|        no|         -|  5 (~0%)|    511 (~0%)|   516 (~0%)|    -|
+    |   o l_S_k_1_k2_l_S_j_1_j1                                                          |       -|   7.30|     4101|  4.101e+04|         7|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    |  + grp_mm2_stage_0_1_Pipeline_l_S_j_3_j2_fu_78                                     |       -|   4.71|       66|    660.000|         -|       66|       -|        no|         -|        -|     17 (~0%)|    82 (~0%)|    -|
+    |   o l_S_j_3_j2                                                                     |       -|   7.30|       64|    640.000|         2|        1|      64|       yes|         -|        -|            -|           -|    -|
+    |  o l_S_i_0_i1                                                                      |       -|   7.30|   271424|  2.714e+06|      4241|        -|      64|        no|         -|        -|            -|           -|    -|
+    | + v56_c_channel_entry_proc_fu_180                                                  |       -|   7.30|        0|      0.000|         -|        0|       -|        no|         -|        -|     66 (~0%)|    20 (~0%)|    -|
+    | + grp_store_res3_1_fu_185                                                          |  Timing|  -0.00|     4169|  4.169e+04|         -|     4169|       -|        no|         -|        -|   1159 (~0%)|  1655 (~0%)|    -|
+    |  + grp_store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1_fu_54  |  Timing|  -0.00|     4099|  4.099e+04|         -|     4099|       -|        no|         -|        -|   1028 (~0%)|  1155 (~0%)|    -|
+    |   o l_S_store_res3_store_res3_l_0_l_store_res3_l_1                                 |       -|   7.30|     4097|  4.097e+04|         3|        1|    4096|       yes|         -|        -|            -|           -|    -|
+    +------------------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem0 | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
+| m_axi_gmem1 | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
+| m_axi_gmem2 | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
+| m_axi_gmem3 | 32 -> 512  | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+

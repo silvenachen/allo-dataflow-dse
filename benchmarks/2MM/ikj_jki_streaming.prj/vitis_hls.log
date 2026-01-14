@@ -1,0 +1,890 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'sli3079' on host 'chao-srv1.ece.gatech.edu' (Linux_x86_64 version 4.18.0-553.89.1.el8_10.x86_64) on Wed Jan 14 15:07:41 EST 2026
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
+INFO: [HLS 200-10] In directory '/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/2MM/ikj_jki_streaming.prj'
+Sourcing Tcl script 'setup.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset ls_project 
+INFO: [HLS 200-10] Opening and resetting project '/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/2MM/ikj_jki_streaming.prj/ls_project'.
+WARNING: [HLS 200-40] No /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/2MM/ikj_jki_streaming.prj/ls_project/solution1/solution1.aps file found.
+INFO: [HLS 200-1510] Running: set_top two_mm_stream_ikj_jki 
+INFO: [HLS 200-1510] Running: add_files kernel.cpp -cflags -Wall 
+INFO: [HLS 200-10] Adding design file 'kernel.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb testbench.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'testbench.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vitis 
+INFO: [HLS 200-10] Creating and opening solution '/export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/2MM/ikj_jki_streaming.prj/ls_project/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No /export/hdd/scratch/sli3079/allo_ls/allo_ls_dse/benchmarks/2MM/ikj_jki_streaming.prj/ls_project/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../testbench.cpp in debug mode
+   Compiling ../../../../kernel.cpp in debug mode
+   Generating csim.exe
+In file included from /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_hotbm_apfixed.h:45:0,
+                 from /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_math.h:1065,
+                 from ../../../../kernel.cpp:11:
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/utils/x_hls_utils.h:243:40: warning: ‘hls_preserve’ attribute directive ignored [-Wattributes]
+ __attribute__((hls_preserve)) T reg(T d)
+                                        ^
+In file included from /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_math.h:1069:0,
+                 from ../../../../kernel.cpp:11:
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h: In function ‘ap_fixed<_AP_W2, _AP_I2> sqrt_fixed(ap_fixed<_AP_W2, _AP_I2>)’:
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h:324:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+                 if ( x_l_FL < mul_FL )            x_l_FL_l[prcs/2] = 1;
+                 ^~
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h:325:51: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+                                                   x_l_FL_l        -= mul_FL;
+                                                   ^~~~~~~~
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h:333:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+                 if ( x_l_FL < mul_FL )                                       delta[0]         = 1;
+                 ^~
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h:334:78: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+                                                                              x_l_FH_l        -= delta;
+                                                                              ^~~~~~~~
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h:339:17: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+                 if ( (x_l_FH<mul_FH)||((x_l_FH==mul_FH)&&(x_l_FL<mul_FL)) )  x_l_I           --;
+                 ^~
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_sqrt_apfixed.h:340:78: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+                                                                              x_l_I           -= mul_I;
+                                                                              ^~~~~
+../../../../kernel.cpp: In function ‘void mm1_stage_0(float (*)[64], float (*)[64], hls::stream<float>&)’:
+../../../../kernel.cpp:24:3: warning: label ‘l_S_i_0_i’ defined but not used [-Wunused-label]
+   l_S_i_0_i: for (int i = 0; i < 64; i++) { // L4
+   ^~~~~~~~~
+../../../../kernel.cpp:29:5: warning: label ‘l_S_k_0_k’ defined but not used [-Wunused-label]
+     l_S_k_0_k: for (int k = 0; k < 64; k++) { // L7
+     ^~~~~~~~~
+../../../../kernel.cpp:33:7: warning: label ‘l_S_j_0_j’ defined but not used [-Wunused-label]
+       l_S_j_0_j: for (int j = 0; j < 64; j++) { // L11
+       ^~~~~~~~~
+../../../../kernel.cpp: In function ‘void mm2_stage_0(float (*)[64], float (*)[64], hls::stream<float>&)’:
+../../../../kernel.cpp:56:3: warning: label ‘l_S_i_0_i1’ defined but not used [-Wunused-label]
+   l_S_i_0_i1: for (int i1 = 0; i1 < 64; i1++) { // L27
+   ^~~~~~~~~~
+../../../../kernel.cpp:62:5: warning: label ‘l_S_j_0_j1’ defined but not used [-Wunused-label]
+     l_S_j_0_j1: for (int j1 = 0; j1 < 64; j1++) { // L29
+     ^~~~~~~~~~
+../../../../kernel.cpp:68:3: warning: label ‘l_S_j_2_j2’ defined but not used [-Wunused-label]
+   l_S_j_2_j2: for (int j2 = 0; j2 < 64; j2++) { // L34
+   ^~~~~~~~~~
+../../../../kernel.cpp:73:5: warning: label ‘l_S_k_2_k1’ defined but not used [-Wunused-label]
+     l_S_k_2_k1: for (int k1 = 0; k1 < 64; k1++) { // L37
+     ^~~~~~~~~~
+../../../../kernel.cpp:74:7: warning: label ‘l_S_i_2_i2’ defined but not used [-Wunused-label]
+       l_S_i_2_i2: for (int i2 = 0; i2 < 64; i2++) { // L38
+       ^~~~~~~~~~
+../../../../kernel.cpp:84:5: warning: label ‘l_S_i_4_i3’ defined but not used [-Wunused-label]
+     l_S_i_4_i3: for (int i3 = 0; i3 < 64; i3++) { // L47
+     ^~~~~~~~~~
+../../../../kernel.cpp: In function ‘void load_buf0(float*, float (*)[64])’:
+../../../../kernel.cpp:96:3: warning: label ‘l_S_load_buf0_load_buf0_l_0’ defined but not used [-Wunused-label]
+   l_S_load_buf0_load_buf0_l_0: for (int load_buf0_l_0 = 0; load_buf0_l_0 < 64; load_buf0_l_0++) { //
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../kernel.cpp:97:5: warning: label ‘l_load_buf0_l_1’ defined but not used [-Wunused-label]
+     l_load_buf0_l_1: for (int load_buf0_l_1 = 0; load_buf0_l_1 < 64; load_buf0_l_1++) { //
+     ^~~~~~~~~~~~~~~
+../../../../kernel.cpp: In function ‘void load_buf1(float*, float (*)[64])’:
+../../../../kernel.cpp:109:3: warning: label ‘l_S_load_buf1_load_buf1_l_0’ defined but not used [-Wunused-label]
+   l_S_load_buf1_load_buf1_l_0: for (int load_buf1_l_0 = 0; load_buf1_l_0 < 64; load_buf1_l_0++) { //
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../kernel.cpp:110:5: warning: label ‘l_load_buf1_l_1’ defined but not used [-Wunused-label]
+     l_load_buf1_l_1: for (int load_buf1_l_1 = 0; load_buf1_l_1 < 64; load_buf1_l_1++) { //
+     ^~~~~~~~~~~~~~~
+../../../../kernel.cpp: In function ‘void load_buf2(float*, float (*)[64])’:
+../../../../kernel.cpp:122:3: warning: label ‘l_S_load_buf2_load_buf2_l_0’ defined but not used [-Wunused-label]
+   l_S_load_buf2_load_buf2_l_0: for (int load_buf2_l_0 = 0; load_buf2_l_0 < 64; load_buf2_l_0++) { //
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../kernel.cpp:123:5: warning: label ‘l_load_buf2_l_1’ defined but not used [-Wunused-label]
+     l_load_buf2_l_1: for (int load_buf2_l_1 = 0; load_buf2_l_1 < 64; load_buf2_l_1++) { //
+     ^~~~~~~~~~~~~~~
+../../../../kernel.cpp: In function ‘void store_res3(float (*)[64], float*)’:
+../../../../kernel.cpp:135:3: warning: label ‘l_S_store_res3_store_res3_l_0’ defined but not used [-Wunused-label]
+   l_S_store_res3_store_res3_l_0: for (int store_res3_l_0 = 0; store_res3_l_0 < 64; store_res3_l_0++) { //
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../kernel.cpp:136:5: warning: label ‘l_store_res3_l_1’ defined but not used [-Wunused-label]
+     l_store_res3_l_1: for (int store_res3_l_1 = 0; store_res3_l_1 < 64; store_res3_l_1++) { //
+     ^~~~~~~~~~~~~~~~
+In file included from /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_stream.h:61:0,
+                 from ../../../../kernel.cpp:12:
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_stream_thread_unsafe.h: In instantiation of ‘void hls::stream<__STREAM_T__, 0>::write(const __STREAM_T__&) [with __STREAM_T__ = float]’:
+../../../../kernel.cpp:44:26:   required from here
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_stream_thread_unsafe.h:263:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(max_size < size()) {
+            ~~~~~~~~~^~~~~~~~
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_stream_thread_unsafe.h: In instantiation of ‘void hls::stream<__STREAM_T__, 0>::register_handler() [with __STREAM_T__ = float]’:
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_stream_thread_unsafe.h:147:25:   required from ‘hls::stream<__STREAM_T__, 0>::stream() [with __STREAM_T__ = float]’
+../../../../kernel.cpp:162:24:   required from here
+/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/include/hls_stream_thread_unsafe.h:138:19: warning: unused variable ‘handler’ [-Wunused-variable]
+         const int handler = std::atexit(stream_handler);
+                   ^~~~~~~
+4×4 Test for 2MM: D = (A @ B) @ C
+===================================
+
+Input A:
+   1.00    0.00    0.00    0.00 
+   0.00    2.00    0.00    0.00 
+   0.00    0.00    3.00    0.00 
+   0.00    0.00    0.00    4.00 
+
+Input B:
+   1.00    2.00    0.00    0.00 
+   3.00    4.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+Input C:
+   2.00    0.00    0.00    0.00 
+   0.00    3.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+Expected T = A @ B:
+   1.00    2.00    0.00    0.00
+   6.00    8.00    0.00    0.00
+   0.00    0.00    0.00    0.00
+   0.00    0.00    0.00    0.00
+
+Expected D = T @ C:
+   2.00    6.00    0.00    0.00
+  12.00   24.00    0.00    0.00
+   0.00    0.00    0.00    0.00
+   0.00    0.00    0.00    0.00
+
+Running HLS kernel...
+Output D (HLS):
+   2.00    6.00    0.00    0.00 
+  12.00   24.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+   0.00    0.00    0.00    0.00 
+
+
+✓ TEST PASSED!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 8.19 seconds. CPU system time: 0.89 seconds. Elapsed time: 9.72 seconds; current allocated memory: 250.667 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 250.903 MB.
+INFO: [HLS 200-10] Analyzing design file 'kernel.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1241_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1241:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_716_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_ref.h:716:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_730_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_ref.h:730:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_744_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_ref.h:744:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1143_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:1143:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_87_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:87:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_143_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:143:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_315_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:315:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_475_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:475:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_655_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:655:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_659_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:659:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_769_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:769:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_866_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:866:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_885_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:885:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1199_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:1199:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1282_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cordic_apfixed.h:1282:5
+WARNING: [HLS 207-5307] unused variable 'x_lsb': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:132:29
+WARNING: [HLS 207-5307] unused variable 'x_msb_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:215:29
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_94_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:94:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_100_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:100:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_104_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:104:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_171_4': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:171:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_177_5': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:177:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_181_6': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:181:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_196_7': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:196:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_204_8': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:204:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_269_9': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:269:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_275_10': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:275:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_279_11': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:279:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_294_12': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:294:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_302_13': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:302:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_531_14': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:531:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_537_15': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:537:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_541_16': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:541:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_551_17': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:551:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_555_18': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:555:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_565_19': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:565:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_573_20': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:573:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_934_21': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:934:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_940_22': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:940:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_944_23': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:944:17
+WARNING: [HLS 207-5307] unused variable 'wf': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:995:26
+WARNING: [HLS 207-5307] unused variable 'x_msb_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1207:29
+WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1200:30
+WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1199:30
+WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1353:30
+WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1352:30
+WARNING: [HLS 207-5307] unused variable 'g': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1655:30
+WARNING: [HLS 207-5307] unused variable 'f_x_msb_4_s': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1820:30
+WARNING: [HLS 207-5307] unused variable 'Maxprecision': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1656:30
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1060_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1060:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1066_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1066:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1070_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1070:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1157_4': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1157:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1163_5': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1163:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1167_6': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1167:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1186_7': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1186:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1193_8': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1193:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1309_9': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1309:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1315_10': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1315:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1319_11': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1319:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1339_12': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1339:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1346_13': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1346:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1608_14': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1608:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1614_15': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1614:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1618_16': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1618:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1642_17': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1642:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1649_18': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:1649:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2079_19': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2079:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2085_20': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2085:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2089_21': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2089:17
+WARNING: [HLS 207-5307] unused variable 'one': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2121:20
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2219_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2219:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2226_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2226:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2230_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2230:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2277_4': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2277:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2284_5': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2284:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2288_6': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2288:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2306_7': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2306:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2361_8': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2361:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2368_9': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2368:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2372_10': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2372:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2390_11': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2390:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2479_12': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2479:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2486_13': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2486:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2490_14': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2490:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2500_15': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2500:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2504_16': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2504:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2515_17': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2515:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2523_18': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2523:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2848_19': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2848:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2855_20': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2855:17
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2859_21': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2859:17
+WARNING: [HLS 207-5307] unused variable 'overf': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2921:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2947_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2947:4
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2954_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2954:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2958_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2958:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_2973_4': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:2973:3
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3005_5': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3005:4
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3012_6': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3012:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3016_7': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3016:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3031_8': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3031:3
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3081_9': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3081:4
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3088_10': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3088:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3092_11': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3092:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3107_12': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3107:3
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3244_13': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3244:4
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3251_14': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3251:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3255_15': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3255:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3270_16': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3270:3
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3430_17': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3430:4
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3437_18': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3437:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_3441_19': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_exp_apfixed.h:3441:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_729_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_log_apfixed.h:729:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_947_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_log_apfixed.h:947:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_1371_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_log_apfixed.h:1371:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_266_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_sqrt_apfixed.h:266:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_294_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_sqrt_apfixed.h:294:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_74_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:74:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_135_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:135:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_149_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:149:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_179_4': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:179:13
+WARNING: [HLS 207-5307] unused variable 'n_pos': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:274:25
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_307_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:307:12
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_327_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:327:16
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_341_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:341:20
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_459_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:459:12
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_473_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_pow_apfixed.h:473:15
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_59_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_diff_apfixed.h:59:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_209_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_diff_apfixed.h:209:13
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_274_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_diff_apfixed.h:274:13
+WARNING: [HLS 207-5297] unused label 'CLZ_LOOP': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_frexp_apfixed.h:70:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_42_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:42:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_53_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:53:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_64_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:64:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_75_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:75:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_86_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:86:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_97_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:97:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_108_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:108:2
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_119_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_all_any_apfixed.h:119:2
+WARNING: [HLS 207-5297] unused label 'x_complex_mult_real': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:118:7
+WARNING: [HLS 207-5297] unused label 'x_complex_mult_complex': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:124:7
+WARNING: [HLS 207-5297] unused label 'x_complex_mult_complex': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:131:7
+WARNING: [HLS 207-5297] unused label 'x_conj_sq_complex': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:320:5
+WARNING: [HLS 207-5297] unused label 'x_conj_complex': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_x_complex.h:326:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_23_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_mad_apfixed.h:23:12
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_66_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_cbrt_apfixed.h:66:7
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_107_2': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:107:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_75_1': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:75:9
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_195_3': /tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_hypot_apfixed.h:195:8
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_26_1': kernel.cpp:26:5
+WARNING: [HLS 207-5297] unused label 'l_S_j_0_j': kernel.cpp:33:7
+WARNING: [HLS 207-5297] unused label 'l_S_k_0_k': kernel.cpp:29:5
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_43_2': kernel.cpp:43:5
+WARNING: [HLS 207-5297] unused label 'l_S_i_0_i': kernel.cpp:24:3
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_58_1': kernel.cpp:58:5
+WARNING: [HLS 207-5297] unused label 'l_S_j_0_j1': kernel.cpp:62:5
+WARNING: [HLS 207-5297] unused label 'l_S_i_0_i1': kernel.cpp:56:3
+WARNING: [HLS 207-5297] unused label 'VITIS_LOOP_70_2': kernel.cpp:70:5
+WARNING: [HLS 207-5297] unused label 'l_S_i_2_i2': kernel.cpp:74:7
+WARNING: [HLS 207-5297] unused label 'l_S_k_2_k1': kernel.cpp:73:5
+WARNING: [HLS 207-5297] unused label 'l_S_i_4_i3': kernel.cpp:84:5
+WARNING: [HLS 207-5297] unused label 'l_S_j_2_j2': kernel.cpp:68:3
+WARNING: [HLS 207-5297] unused label 'l_load_buf0_l_1': kernel.cpp:97:5
+WARNING: [HLS 207-5297] unused label 'l_S_load_buf0_load_buf0_l_0': kernel.cpp:96:3
+WARNING: [HLS 207-5297] unused label 'l_load_buf1_l_1': kernel.cpp:110:5
+WARNING: [HLS 207-5297] unused label 'l_S_load_buf1_load_buf1_l_0': kernel.cpp:109:3
+WARNING: [HLS 207-5297] unused label 'l_load_buf2_l_1': kernel.cpp:123:5
+WARNING: [HLS 207-5297] unused label 'l_S_load_buf2_load_buf2_l_0': kernel.cpp:122:3
+WARNING: [HLS 207-5297] unused label 'l_store_res3_l_1': kernel.cpp:136:5
+WARNING: [HLS 207-5297] unused label 'l_S_store_res3_store_res3_l_0': kernel.cpp:135:3
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 41.2 seconds. CPU system time: 2.78 seconds. Elapsed time: 44.45 seconds; current allocated memory: 255.829 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'mm1_stage_0' (kernel.cpp:44:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::read()' (/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'mm2_stage_0' (kernel.cpp:59:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'two_mm_stream_ikj_jki' (kernel.cpp:162:24)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on port 'gmem0'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:96:32)
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on port 'gmem1'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:109:32)
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on port 'gmem2'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:122:32)
+INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on port 'gmem3'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (kernel.cpp:135:34)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.24 seconds. CPU system time: 0.6 seconds. Elapsed time: 8 seconds; current allocated memory: 256.521 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 256.522 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 258.096 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 257.816 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_1' (/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:0) in function 'mm2_stage_0.1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_70_2' (kernel.cpp:70) in function 'mm2_stage_0.1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_43_2' (kernel.cpp:43) in function 'mm1_stage_0.1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_1' (kernel.cpp:26) in function 'mm1_stage_0.1' automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'two_mm_stream_ikj_jki' (kernel.cpp:145), detected/extracted 7 process function(s): 
+	 'entry_proc'
+	 'load_buf0.1'
+	 'load_buf1.1'
+	 'load_buf2.1'
+	 'mm1_stage_0.1'
+	 'mm2_stage_0.1'
+	 'store_res3.1'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 279.110 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'l_S_store_res3_store_res3_l_0' (kernel.cpp:135:43) in function 'store_res3.1'.
+WARNING: [HLS 200-960] Cannot flatten loop 'l_S_i_0_i1' (kernel.cpp:57:11) in function 'mm2_stage_0.1' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'l_S_k_2_k1' (kernel.cpp:73:26) in function 'mm2_stage_0.1'.
+WARNING: [HLS 200-960] Cannot flatten loop 'l_S_j_2_j2' (kernel.cpp:69:11) in function 'mm2_stage_0.1' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'l_S_k_0_k' (kernel.cpp:29:25) in function 'mm1_stage_0.1'.
+WARNING: [HLS 200-960] Cannot flatten loop 'l_S_i_0_i' (kernel.cpp:25:11) in function 'mm1_stage_0.1' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf2_load_buf2_l_0' (kernel.cpp:122:41) in function 'load_buf2.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf1_load_buf1_l_0' (kernel.cpp:109:41) in function 'load_buf1.1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'l_S_load_buf0_load_buf0_l_0' (kernel.cpp:96:41) in function 'load_buf0.1'.
+INFO: [HLS 200-472] Inferring partial write operation for 'v20' (kernel.cpp:59:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'd_col' (kernel.cpp:71:18)
+INFO: [HLS 200-472] Inferring partial write operation for 't_row' (kernel.cpp:27:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'd_col' (kernel.cpp:81:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'T_buffer' (kernel.cpp:65:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'v16' (kernel.cpp:87:19)
+INFO: [HLS 200-472] Inferring partial write operation for 't_row' (kernel.cpp:40:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'v46' (kernel.cpp:126:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'v41' (kernel.cpp:113:41)
+INFO: [HLS 200-472] Inferring partial write operation for 'v36' (kernel.cpp:100:41)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.27 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.36 seconds; current allocated memory: 455.829 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'two_mm_stream_ikj_jki' ...
+WARNING: [SYN 201-103] Legalizing function name 'load_buf0.1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' to 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_buf0.1' to 'load_buf0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_buf1.1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' to 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_buf1.1' to 'load_buf1_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_buf2.1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1' to 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_buf2.1' to 'load_buf2_1'.
+WARNING: [SYN 201-103] Legalizing function name 'mm1_stage_0.1_Pipeline_VITIS_LOOP_26_1' to 'mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1'.
+WARNING: [SYN 201-103] Legalizing function name 'mm1_stage_0.1_Pipeline_l_S_k_0_k_l_S_j_0_j' to 'mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j'.
+WARNING: [SYN 201-103] Legalizing function name 'mm1_stage_0.1_Pipeline_VITIS_LOOP_43_2' to 'mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2'.
+WARNING: [SYN 201-103] Legalizing function name 'mm1_stage_0.1' to 'mm1_stage_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'mm2_stage_0.1_Pipeline_VITIS_LOOP_58_1' to 'mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1'.
+WARNING: [SYN 201-103] Legalizing function name 'mm2_stage_0.1_Pipeline_l_S_j_0_j1' to 'mm2_stage_0_1_Pipeline_l_S_j_0_j1'.
+WARNING: [SYN 201-103] Legalizing function name 'mm2_stage_0.1_Pipeline_VITIS_LOOP_70_2' to 'mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2'.
+WARNING: [SYN 201-103] Legalizing function name 'mm2_stage_0.1_Pipeline_l_S_k_2_k1_l_S_i_2_i2' to 'mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2'.
+WARNING: [SYN 201-103] Legalizing function name 'mm2_stage_0.1_Pipeline_l_S_i_4_i3' to 'mm2_stage_0_1_Pipeline_l_S_i_4_i3'.
+WARNING: [SYN 201-103] Legalizing function name 'mm2_stage_0.1' to 'mm2_stage_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'store_res3.1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1' to 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1'.
+WARNING: [SYN 201-103] Legalizing function name 'store_res3.1' to 'store_res3_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.2 seconds; current allocated memory: 456.207 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 456.257 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 456.447 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 456.669 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_buf0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 456.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.49 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.5 seconds; current allocated memory: 457.069 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 457.265 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 457.486 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_buf1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 457.664 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.49 seconds. CPU system time: 0 seconds. Elapsed time: 0.51 seconds; current allocated memory: 457.885 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 458.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 458.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_buf2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 458.455 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.52 seconds. CPU system time: 0 seconds. Elapsed time: 0.53 seconds; current allocated memory: 458.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_26_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 458.791 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 458.862 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k_l_S_j_0_j'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'l_S_k_0_k_l_S_j_0_j'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 459.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 459.248 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_43_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_43_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 459.337 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 459.427 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm1_stage_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 459.523 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 459.628 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_58_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 459.712 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 459.799 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm2_stage_0_1_Pipeline_l_S_j_0_j1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_j_0_j1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'l_S_j_0_j1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 459.897 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 459.994 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_70_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_70_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 460.071 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 460.143 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_2_k1_l_S_i_2_i2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, loop 'l_S_k_2_k1_l_S_i_2_i2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 460.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 460.559 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm2_stage_0_1_Pipeline_l_S_i_4_i3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_i_4_i3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'l_S_i_4_i3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 460.661 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 460.764 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mm2_stage_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 460.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 461.061 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_store_res3_store_res3_l_0_l_store_res3_l_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'l_S_store_res3_store_res3_l_0_l_store_res3_l_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 461.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 461.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_res3_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 461.674 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 461.873 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'two_mm_stream_ikj_jki' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO v58_c_channel (from entry_proc_U0 to store_res3_1_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1019] Consider increasing the depth of PIPO buf2 (from load_buf2_1_U0 to mm2_stage_0_1_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 462.040 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 462.284 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.46 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.47 seconds; current allocated memory: 462.408 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' pipeline 'l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1/m_axi_gmem0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_buf0_1_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 463.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_buf0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_buf0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 465.136 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' pipeline 'l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1/m_axi_gmem1_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_buf1_1_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 466.236 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_buf1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_buf1_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.29 seconds; current allocated memory: 468.271 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1' pipeline 'l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1/m_axi_gmem2_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_buf2_1_Pipeline_l_S_load_buf2_load_buf2_l_0_l_load_buf2_l_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 469.295 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_buf2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_buf2_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 471.362 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm1_stage_0_1_Pipeline_VITIS_LOOP_26_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 472.057 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j' pipeline 'l_S_k_0_k_l_S_j_0_j' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm1_stage_0_1_Pipeline_l_S_k_0_k_l_S_j_0_j'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 472.850 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2' pipeline 'VITIS_LOOP_43_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm1_stage_0_1_Pipeline_VITIS_LOOP_43_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.29 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 473.929 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm1_stage_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm1_stage_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 474.714 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1' pipeline 'VITIS_LOOP_58_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm2_stage_0_1_Pipeline_VITIS_LOOP_58_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.21 seconds; current allocated memory: 475.425 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm2_stage_0_1_Pipeline_l_S_j_0_j1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mm2_stage_0_1_Pipeline_l_S_j_0_j1' pipeline 'l_S_j_0_j1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm2_stage_0_1_Pipeline_l_S_j_0_j1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 476.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm2_stage_0_1_Pipeline_VITIS_LOOP_70_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 476.642 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2' pipeline 'l_S_k_2_k1_l_S_i_2_i2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm2_stage_0_1_Pipeline_l_S_k_2_k1_l_S_i_2_i2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 477.462 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm2_stage_0_1_Pipeline_l_S_i_4_i3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mm2_stage_0_1_Pipeline_l_S_i_4_i3' pipeline 'l_S_i_4_i3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm2_stage_0_1_Pipeline_l_S_i_4_i3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 478.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mm2_stage_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mm2_stage_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 479.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1' pipeline 'l_S_store_res3_store_res3_l_0_l_store_res3_l_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1/m_axi_gmem3_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_res3_1_Pipeline_l_S_store_res3_store_res3_l_0_l_store_res3_l_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.38 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.42 seconds; current allocated memory: 481.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_res3_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_res3_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 483.090 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'two_mm_stream_ikj_jki' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/v55' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/v56' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/v57' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'two_mm_stream_ikj_jki/v58' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'two_mm_stream_ikj_jki' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'v55', 'v56', 'v57', 'v58' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'two_mm_stream_ikj_jki'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 486.173 MB.
+INFO: [RTMG 210-278] Implementing memory 'two_mm_stream_ikj_jki_mm1_stage_0_1_t_row_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'two_mm_stream_ikj_jki_mm2_stage_0_1_T_buffer_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'two_mm_stream_ikj_jki_mm2_stage_0_1_v20_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'two_mm_stream_ikj_jki_mm2_stage_0_1_d_col_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-741] Implementing PIPO two_mm_stream_ikj_jki_buf0_memcore using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'two_mm_stream_ikj_jki_buf0_memcore_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'v58_c_channel_U(two_mm_stream_ikj_jki_fifo_w64_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'v63_U(two_mm_stream_ikj_jki_fifo_w32_d4_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.45 seconds. CPU system time: 0.14 seconds. Elapsed time: 2.62 seconds; current allocated memory: 492.026 MB.
+INFO: [HLS 200-1603] Design has MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3.05 seconds. CPU system time: 0.03 seconds. Elapsed time: 3.11 seconds; current allocated memory: 501.259 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for two_mm_stream_ikj_jki.
+INFO: [VLOG 209-307] Generating Verilog RTL for two_mm_stream_ikj_jki.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 66.36 seconds. CPU system time: 4.28 seconds. Elapsed time: 71.62 seconds; current allocated memory: 501.242 MB.
+INFO: [HLS 200-112] Total CPU user time: 79.13 seconds. Total CPU system time: 5.89 seconds. Total elapsed time: 85.81 seconds; peak allocated memory: 501.259 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Jan 14 15:09:06 2026...

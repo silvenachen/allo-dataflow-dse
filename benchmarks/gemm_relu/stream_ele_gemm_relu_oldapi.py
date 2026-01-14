@@ -17,8 +17,7 @@ M, N, K = 64, 64, 64
 @df.region()
 def gemm_relu_element_wise():
     """Element-wise streaming: i→j→k"""
-    # ✅ 使用 df.pipe() 创建单个 pipe
-    pipe = df.pipe(dtype=Ty, shape=(), depth=4)  # shape=() 表示标量
+    pipe = df.pipe(dtype=Ty, shape=(), depth=4)  
     
     @df.kernel(mapping=[1])
     def gemm_stage(A: Ty[M, K], B: Ty[K, N]):

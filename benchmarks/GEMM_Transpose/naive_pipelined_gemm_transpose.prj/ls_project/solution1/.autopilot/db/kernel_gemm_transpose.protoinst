@@ -1,0 +1,70 @@
+{
+	"version": "1.0",
+	"modules": {
+		"kernel_gemm_transpose": {
+			"proto_instances": {
+				"/AESL_inst_kernel_gemm_transpose_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_gemm_stage_fu_155/grp_gemm_stage_fu_155_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_kernel_gemm_transpose_Pipeline_VITIS_LOOP_119_1_VITIS_LOOP_120_2_fu_150/grp_kernel_gemm_transpose_Pipeline_VITIS_LOOP_119_1_VITIS_LOOP_120_2_fu_150_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_kernel_gemm_transpose_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_134/grp_kernel_gemm_transpose_Pipeline_l_S_load_buf0_load_buf0_l_0_l_load_buf0_l_1_fu_134_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_kernel_gemm_transpose_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_142/grp_kernel_gemm_transpose_Pipeline_l_S_load_buf1_load_buf1_l_0_l_load_buf1_l_1_fu_142_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_kernel_gemm_transpose_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_162/grp_kernel_gemm_transpose_Pipeline_l_S_store_res2_store_res2_l_0_l_store_res2_l_1_fu_162_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

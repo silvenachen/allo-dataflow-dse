@@ -1,0 +1,7 @@
+Running: xsim.dir/two_mm_stream_ikj_ikj/xsimk -simmode gui -wdb two_mm_stream_ikj_ikj.wdb -simrunnum 0 -socket 48415
+Design successfully loaded
+Design Loading Memory Usage: 44708 KB (Peak: 44716 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 159432 KB (Peak: 183976 KB)
+Simulation CPU Usage: 30660 ms

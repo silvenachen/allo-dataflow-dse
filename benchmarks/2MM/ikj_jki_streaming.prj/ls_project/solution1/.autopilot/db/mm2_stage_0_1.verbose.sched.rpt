@@ -1,0 +1,229 @@
+
+
+================================================================
+== Vitis HLS Report for 'mm2_stage_0_1'
+================================================================
+* Date:           Wed Jan 14 15:08:53 2026
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        ls_project
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.297 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   280130|   280130|  2.801 ms|  2.801 ms|  280130|  280130|       no|
+    +---------+---------+----------+----------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_S_i_0_i1  |     8704|     8704|       136|          -|          -|    64|        no|
+        |- l_S_j_2_j2  |   271424|   271424|      4241|          -|          -|    64|        no|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 6 
+3 --> 4 
+4 --> 5 
+5 --> 2 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 6 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.46>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i1 = alloca i32 1"   --->   Operation 12 'alloca' 'i1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %v631, void @empty_6, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%T_buffer = alloca i64 1" [kernel.cpp:55]   --->   Operation 14 'alloca' 'T_buffer' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%v20 = alloca i64 1" [kernel.cpp:57]   --->   Operation 15 'alloca' 'v20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%d_col = alloca i64 1" [kernel.cpp:69]   --->   Operation 16 'alloca' 'd_col' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.46ns)   --->   "%store_ln56 = store i7 0, i7 %i1" [kernel.cpp:56]   --->   Operation 17 'store' 'store_ln56' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln56 = br void" [kernel.cpp:56]   --->   Operation 18 'br' 'br_ln56' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.31>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%i1_1 = load i7 %i1" [kernel.cpp:65]   --->   Operation 19 'load' 'i1_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.71ns)   --->   "%icmp_ln56 = icmp_eq  i7 %i1_1, i7 64" [kernel.cpp:56]   --->   Operation 20 'icmp' 'icmp_ln56' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 21 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.85ns)   --->   "%add_ln56 = add i7 %i1_1, i7 1" [kernel.cpp:56]   --->   Operation 22 'add' 'add_ln56' <Predicate = true> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln56 = br i1 %icmp_ln56, void %.split14, void %.preheader2.preheader" [kernel.cpp:56]   --->   Operation 23 'br' 'br_ln56' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln65 = trunc i7 %i1_1" [kernel.cpp:65]   --->   Operation 24 'trunc' 'trunc_ln65' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%empty_45 = wait i32 @_ssdm_op_Wait"   --->   Operation 25 'wait' 'empty_45' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_2 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mm2_stage_0.1_Pipeline_VITIS_LOOP_58_1, i32 %v631, i32 %v20"   --->   Operation 26 'call' 'call_ln0' <Predicate = (!icmp_ln56)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 27 [1/1] (0.46ns)   --->   "%store_ln56 = store i7 %add_ln56, i7 %i1" [kernel.cpp:56]   --->   Operation 27 'store' 'store_ln56' <Predicate = (!icmp_ln56)> <Delay = 0.46>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%j2 = alloca i32 1"   --->   Operation 28 'alloca' 'j2' <Predicate = (icmp_ln56)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.46ns)   --->   "%store_ln68 = store i7 0, i7 %j2" [kernel.cpp:68]   --->   Operation 29 'store' 'store_ln68' <Predicate = (icmp_ln56)> <Delay = 0.46>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln68 = br void %.preheader2" [kernel.cpp:68]   --->   Operation 30 'br' 'br_ln68' <Predicate = (icmp_ln56)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln0 = call void @mm2_stage_0.1_Pipeline_VITIS_LOOP_58_1, i32 %v631, i32 %v20"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_3_cast = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i6.i6, i6 %trunc_ln65, i6 0" [kernel.cpp:57]   --->   Operation 32 'bitconcatenate' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln57 = call void @mm2_stage_0.1_Pipeline_l_S_j_0_j1, i12 %tmp_3_cast, i32 %T_buffer, i32 %v20" [kernel.cpp:57]   --->   Operation 33 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%specloopname_ln57 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [kernel.cpp:57]   --->   Operation 34 'specloopname' 'specloopname_ln57' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln57 = call void @mm2_stage_0.1_Pipeline_l_S_j_0_j1, i12 %tmp_3_cast, i32 %T_buffer, i32 %v20" [kernel.cpp:57]   --->   Operation 35 'call' 'call_ln57' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 36 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 2> <Delay = 1.31>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%j2_1 = load i7 %j2" [kernel.cpp:69]   --->   Operation 37 'load' 'j2_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.71ns)   --->   "%icmp_ln68 = icmp_eq  i7 %j2_1, i7 64" [kernel.cpp:68]   --->   Operation 38 'icmp' 'icmp_ln68' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%empty_46 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 39 'speclooptripcount' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.85ns)   --->   "%add_ln68 = add i7 %j2_1, i7 1" [kernel.cpp:68]   --->   Operation 40 'add' 'add_ln68' <Predicate = true> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln68 = br i1 %icmp_ln68, void %.split8, void" [kernel.cpp:68]   --->   Operation 41 'br' 'br_ln68' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln69 = trunc i7 %j2_1" [kernel.cpp:69]   --->   Operation 42 'trunc' 'trunc_ln69' <Predicate = (!icmp_ln68)> <Delay = 0.00>
+ST_6 : Operation 43 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mm2_stage_0.1_Pipeline_VITIS_LOOP_70_2, i32 %d_col"   --->   Operation 43 'call' 'call_ln0' <Predicate = (!icmp_ln68)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 44 [1/1] (0.46ns)   --->   "%store_ln68 = store i7 %add_ln68, i7 %j2" [kernel.cpp:68]   --->   Operation 44 'store' 'store_ln68' <Predicate = (!icmp_ln68)> <Delay = 0.46>
+ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln90 = ret" [kernel.cpp:90]   --->   Operation 45 'ret' 'ret_ln90' <Predicate = (icmp_ln68)> <Delay = 0.00>
+
+State 7 <SV = 3> <Delay = 0.00>
+ST_7 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln0 = call void @mm2_stage_0.1_Pipeline_VITIS_LOOP_70_2, i32 %d_col"   --->   Operation 46 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 4> <Delay = 2.29>
+ST_8 : Operation 47 [2/2] (2.29ns)   --->   "%call_ln69 = call void @mm2_stage_0.1_Pipeline_l_S_k_2_k1_l_S_i_2_i2, i6 %trunc_ln69, i32 %v15, i32 %T_buffer, i32 %d_col" [kernel.cpp:69]   --->   Operation 47 'call' 'call_ln69' <Predicate = true> <Delay = 2.29> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 5> <Delay = 0.00>
+ST_9 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln69 = call void @mm2_stage_0.1_Pipeline_l_S_k_2_k1_l_S_i_2_i2, i6 %trunc_ln69, i32 %v15, i32 %T_buffer, i32 %d_col" [kernel.cpp:69]   --->   Operation 48 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 6> <Delay = 0.00>
+ST_10 : Operation 49 [2/2] (0.00ns)   --->   "%call_ln69 = call void @mm2_stage_0.1_Pipeline_l_S_i_4_i3, i6 %trunc_ln69, i32 %v16, i32 %d_col" [kernel.cpp:69]   --->   Operation 49 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 7> <Delay = 0.00>
+ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%specloopname_ln69 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [kernel.cpp:69]   --->   Operation 50 'specloopname' 'specloopname_ln69' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln69 = call void @mm2_stage_0.1_Pipeline_l_S_i_4_i3, i6 %trunc_ln69, i32 %v16, i32 %d_col" [kernel.cpp:69]   --->   Operation 51 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader2"   --->   Operation 52 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.46ns
+The critical path consists of the following:
+	'alloca' operation ('i1') [4]  (0 ns)
+	'store' operation ('store_ln56', kernel.cpp:56) of constant 0 on local variable 'i1' [9]  (0.46 ns)
+
+ <State 2>: 1.32ns
+The critical path consists of the following:
+	'load' operation ('i1', kernel.cpp:65) on local variable 'i1' [12]  (0 ns)
+	'add' operation ('add_ln56', kernel.cpp:56) [15]  (0.856 ns)
+	'store' operation ('store_ln56', kernel.cpp:56) of variable 'add_ln56', kernel.cpp:56 on local variable 'i1' [24]  (0.46 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 1.32ns
+The critical path consists of the following:
+	'load' operation ('j2', kernel.cpp:69) on local variable 'j2' [31]  (0 ns)
+	'add' operation ('add_ln68', kernel.cpp:68) [34]  (0.856 ns)
+	'store' operation ('store_ln68', kernel.cpp:68) of variable 'add_ln68', kernel.cpp:68 on local variable 'j2' [42]  (0.46 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 2.29ns
+The critical path consists of the following:
+	'call' operation ('call_ln69', kernel.cpp:69) to 'mm2_stage_0.1_Pipeline_l_S_k_2_k1_l_S_i_2_i2' [40]  (2.29 ns)
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

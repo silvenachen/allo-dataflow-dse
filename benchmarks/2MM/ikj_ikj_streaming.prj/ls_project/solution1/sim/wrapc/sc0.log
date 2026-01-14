@@ -1,0 +1,6 @@
+   Build using "/tmp/sli3079-xilinx-2021.1/Vitis_HLS/2021.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling kernel.cpp_pre.cpp.tb.cpp
+   Compiling apatb_two_mm_stream_ikj_ikj.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_two_mm_stream_ikj_ikj_ir.ll
+   Generating cosim.tv.exe
